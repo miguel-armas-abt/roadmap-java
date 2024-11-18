@@ -17,5 +17,5 @@
 - [13. Palabra reservada `final`](path/13-final/README.md)
 - [14. Palabra reservada `static`](path/14-static/README.md)
 - [15. Object](path/15-object/README.md)
-- [16. Maven](path/15-object/README.md)
+- [16. Maven](path/16-maven/README.md)
 - [17. Arquitectura de paquetes](path/17-package-architecture/README.md)
