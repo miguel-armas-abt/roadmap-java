@@ -4,7 +4,7 @@
 
 ---
 
-## 1. CLASE OBJECT
+## 1. Clase Object
 > - La clase `Object` es la superclase de todas las clases en Java. Esto significa que todas las clases en Java heredan directa o indirectamente de `Object`. 
 > - Proporciona un conjunto de métodos que pueden ser utilizados por todas las clases. Por ejemplo, `toString()`, `equals()`, `hashCode()`, etc.
 >
@@ -18,7 +18,7 @@
 
 
 
-## 2. COMPARACIÓN DE OBJETOS Y DATOS PRIMITIVOS
+## 2. Comparación de objetos y datos primitivos
 
 > En Java, la comparación de datos primitivos y objetos sigue reglas diferentes debido a la naturaleza de cada tipo. 
 

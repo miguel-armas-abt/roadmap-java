@@ -13,11 +13,11 @@
 
 ## 1. Conceptos clave
 
-> #### Constructor
-> Es un método que tiene el mismo nombre que la clase y permite la creación o <u>instanciación</u> de un nuevo objeto. El método constructor puede ser sobrecargado.
-
 > #### Sobreecarga
 > Se refiere a que una clase tiene métodos con el mismo nombre, pero diferentes tipos de parámetros.
+
+> #### Constructor
+> Es un método que tiene el mismo nombre que la clase y permite la creación o <u>instanciación</u> de un nuevo objeto. El método constructor puede ser sobrecargado.
 
 | Clase                                                                  | Objeto                                                                       |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|
@@ -110,10 +110,6 @@
 
 ## 4. Herencia en Java
 
-> #### Sobreescritura (@Override)
-> - Se refiere a que una subclase puede proporcionar una implementación específica de un método que ya está definido en su superclase.
-> - Cuando un método de la superclase es sobreescrito, entonces la implementación que prevalece es el de la clase concreta.
-
 > #### Método abstracto
 > Es un método de una clase abstracta (o también de una interfaz) que no tiene cuerpo o implementación, solamente tiene <u>**declaración**</u>.
 
@@ -126,6 +122,11 @@
 
 > #### Clase concreta
 > Es una subclase de una clase abstracta y suministra la implementación para los métodos abstractos.
+
+> #### Sobreescritura (@Override)
+> - Se refiere a que una subclase puede proporcionar una implementación específica de un método que ya está definido en su superclase.
+> - Cuando un método de la superclase es sobreescrito, entonces la implementación que prevalece es el de la clase concreta.
+
 
 > #### Herencia múltiple
 > - Consiste en que una clase puede heredar de más de una clase, ello implica que puede adquirir las propiedades y el comportamiento de todas sus superclases. 

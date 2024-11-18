@@ -4,9 +4,9 @@
 
 ---
 
-> - La palabra reservada `static` se utiliza para definir miembros que le pertenecen a la clase y no a las instancias de la clase.
-> - Permite acceder a los miembros sin necesidad de instanciar objetos.
-> - Mejora el uso de recursos, ya que los miembros estáticos se cargan en memoria una sola vez.
+- La palabra reservada `static` se utiliza para definir miembros que le pertenecen a la clase y no a las instancias de la clase.
+- Permite acceder a los miembros sin necesidad de instanciar objetos.
+- Mejora el uso de recursos, ya que los miembros estáticos se cargan en memoria una sola vez.
 
 > #### Variable estática
 > Se utiliza principalmente para almacenar un dato común entre todas las instancias.

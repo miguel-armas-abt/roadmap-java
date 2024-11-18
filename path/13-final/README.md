@@ -4,7 +4,7 @@
 
 ---
 
-> La palabra reservada final se utiliza para indicar que un elemento no puede ser modificado después de su declaración.
+La palabra reservada final se utiliza para indicar que un elemento no puede ser modificado después de su declaración.
 
 > #### Variable final
 > - Una variable declarada como final no puede cambiar su valor una vez que ha sido asignado. (inmutable)
