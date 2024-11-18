@@ -3,7 +3,7 @@
 [← Regresar a notas](../../README.md) <br>
 
 ---
-[1. Introducción](#1-introduccion) <br>
+[1. Conceptos clave](#1-conceptos-clave) <br>
 [2. Pilares de la POO](#2-pilares-de-la-poo) <br>
 [3. Encapsulamiento en Java](#3-encapsulamiento-en-java) <br>
 [4. Herencia en Java](#4-herencia-en-java) <br>
@@ -11,7 +11,7 @@
 
 ---
 
-## 1. Introduccion
+## 1. Conceptos clave
 
 > #### Constructor
 > Es un método que tiene el mismo nombre que la clase y permite la creación o <u>instanciación</u> de un nuevo objeto. El método constructor puede ser sobrecargado.

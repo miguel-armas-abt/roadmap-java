@@ -3,6 +3,7 @@
 [← Regresar a notas](../../README.md) <br>
 
 ---
+
 ## 1. CLASE OBJECT
 > - La clase `Object` es la superclase de todas las clases en Java. Esto significa que todas las clases en Java heredan directa o indirectamente de `Object`. 
 > - Proporciona un conjunto de métodos que pueden ser utilizados por todas las clases. Por ejemplo, `toString()`, `equals()`, `hashCode()`, etc.

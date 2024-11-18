@@ -16,5 +16,6 @@
 - [12. Modificadores de acceso `public` `private` `protected` `default`](path/12-access-modifiers/README.md)
 - [13. Palabra reservada `final`](path/13-final/README.md)
 - [14. Palabra reservada `static`](path/14-static/README.md)
-- [14. Object](path/15-object/README.md)
-- [14. Arquitectura de paquetes](path/16-package-architecture/README.md)
+- [15. Object](path/15-object/README.md)
+- [16. Maven](path/15-object/README.md)
+- [17. Arquitectura de paquetes](path/17-package-architecture/README.md)
