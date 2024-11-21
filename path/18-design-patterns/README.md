@@ -72,6 +72,22 @@
 > - Combina datos de varias fuentes (DAOs) si es necesario.
 > - Transforma los datos hacia DTO, para que sean más útiles en la lógica de negocio. (Se apoya de un mapper).
 
+### Service
+> > **Lógica de negocio**: Reglas fundamentales del negocio, como validaciones de negocio, cálculos, etc.
+>
+> > **Lógica de aplicación**: Tareas que facilitan el funcionamiento de la aplicación, como validaciones generales, mapeos, cifrados, etc.
+> 
+> 📌 **Problema** <br>
+> Encapsular la lógica de negocio y/o aplicación en capas independientes.
+>
+> 📌 **Solución** <br>
+> - Crear uno o más objetos que proporcionen lógica de negocio y/o aplicación reutilizable.
+> - Generalmete se accede al DAO o Repository para realizar las operaciones necesarias.
+> - Si la lógica de aplicación se torna compleja, es recomendable separarla en otro servicio de tipo "Handler".
+>
+> 📌 **Beneficios** <br>
+> - `Separación de responsabilidades`: Aísla la lógica de negocio y aplicación.
+
 ### Builder
 > 📌 **Problema** <br>
 > Crear objetos complejos con múltiples atributos opcionales, evitando constructores con demasiados parámetros o configuraciones poco claras.
@@ -84,7 +100,7 @@
 
 ### Strategy
 > 📌 **Problema** <br>
-> Cambiar dinámicamente el comportamiento de una clase de acuerdo a ciertas condiciones.
+> Cambiar dinámicamente el comportamiento de un objeto de acuerdo a ciertas condiciones.
 >
 > 📌 **Solución** <br>
 > Crear una interfaz común para un grupo de estrategias e implementar cada comportamiento como una clase concreta.
