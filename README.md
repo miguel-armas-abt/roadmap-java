@@ -18,4 +18,6 @@
 - [14. Palabra reservada `static`](path/14-static/README.md)
 - [15. Object](path/15-object/README.md)
 - [16. Maven](path/16-maven/README.md)
-- [17. Arquitectura de paquetes](path/17-package-architecture/README.md)
+- [17. Principios SOLID](path/17-solid/README.md)
+- [18. Patrones de diseño](path/18-design-patterns/README.md)
+- [19. Arquitectura de paquetes](path/19-package-architecture/README.md)
