@@ -7,7 +7,7 @@
 > #### Variable
 > Es un espacio en memoria RAM en el que se almacena un dato.
 >
-> <img src="../resources/images/variables/variable.png" width="425" height="500">
+> <img src="../resources/images/variables/variable.png" width="425" height="480">
 
 > #### Declaración de una variable
 > Consiste en definir el tipo de dato, el nombre de la variable y opcionalmente la asignación de un valor inicial. 
@@ -25,7 +25,7 @@
 > Significa que una vez que se ha asignado un valor a una variable, se puede utilizar su nombre en el código para hacer referencia a ese valor en diferentes partes del programa. 
 > Este proceso <u>implica recuperar el valor almacenado en el espacio de memoria</u>.
 >
-> <img src="../resources/images/variables/reference.png" width="600" height="150">
+> <img src="../resources/images/variables/reference.png" width="600" height="200">
 
 > #### Valor variable
 > El valor de una variable puede cambiar.
@@ -35,5 +35,5 @@
 > #### Scope de una variable (ámbito o contexto)
 > Se refiere al lugar donde se declara la variable y es accesible dentro del código fuente.
 > 
-> <img src="../resources/images/variables/scope.png" width="800" height="350">
+> <img src="../resources/images/variables/scope.png" width="800" height="280">
 > 

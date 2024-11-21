@@ -11,11 +11,28 @@
 > #### Directorio target
 > - Es el directorio de salida donde Maven coloca los archivos generados durante el proceso de construcción.
 > - Contiene artefactos como el bytecode `.class` y el archivo empaquetado final `.jar` o `.war`.
+>
+> <img src="../resources/images/maven/.jar.png" width="350" height="300">
 
 > #### Directorio `.m2`
 > - Es un directorio en el sistema operativo que contiene:
 >   - **Carpeta `repository`**: Repositorio local que lmacena las dependencias descargadas de los repositorios remotos para su reutilización.
 >   - **Archivo `settings.xml`**: Configuración global de Maven (credenciales, repositorios personalizados, etc).
+>
+> <img src="../resources/images/maven/.m2.png" width="350" height="120">
+
+> #### Archivo `pom.xml`
+> - Es el archivo de configuración principal de Maven para cualquier proyecto.
+> 
+> <img src="../resources/images/maven/pom.png" width="420" height="300">
+> 
+> - `groupId`: Grupo al que pertenece el artefacto.
+> - `artifactId`: Nombre del artefacto.
+> - `version`: Versión del artefacto.
+> - `dependencies`: 
+>   - Dependencias externas que el proyecto necesita para funcionar.
+>   - Maven descargará estas dependencias desde el repositorio central de Maven y las almacenará en el directorio `.m2/repository`.
+
 
 ## Ciclo de vida
 El ciclo de vida principal de Maven consta de varias etapas. Las más importantes son:

@@ -17,6 +17,8 @@
 > - ⚠️  ️<u>Baja cohesión</u>: Los componentes asumen múltiples responsabilidades, lo que los hace difíciles de entender y mantener.
 
 ## 2. SOLID
+> Son principios de diseño orientado a objetos que sirven como guía para mejorar la calidad del código, hacerlo más flexible y fácil de mantener.
+
 - <u>**S**</u>ingle Responsability *(Responsabilidad única)*
 - <u>**O**</u>pen Closed *(Abierto Cerrado)*
 - <u>**L**</u>iskov Substitution *(Sustitución de Liskov)*
@@ -41,10 +43,10 @@
 > ```java
 > public double retrieveBenefit(CreditCard card) {
 >   if(card.getType().equals("CLASSIC")) 
->     retrun 0.01;
+>     return 0.01;
 > 
 >   if(card.getType().equals("GOLD")) 
->     retrun 0.02;
+>     return 0.02;
 > 
 >   if(card.getType().equals("PLATINUM")) 
 >     return 0.03;
@@ -54,7 +56,7 @@
 > ```
 > 
 > 💡 **Solución** <br>
-> En general, se debe generar una abstracción de la funcionalidad e implementar cada nuevo tipo en una clase concreta separada.
+> En general, se debe generar una abstracción de la funcionalidad e implementar cada tipo en una clase concreta separada.
 > ```java
 > public abstract class CreditCard {
 >   public abstract double getBenefit();

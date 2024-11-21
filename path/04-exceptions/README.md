@@ -45,8 +45,8 @@
 ## 3. Stack trace
 > - La pila de errores permite rastrear el origen de un error en el programa.
 > - Ofrece trazabilidad de los métodos que fueron llamados antes de que ocurriera la excepción.
-    > <br> <br>
-    >  <img src="../resources/images/exceptions/stack-trace.gif" width="600" height="450">
+> <br> <br>
+>  <img src="../resources/images/exceptions/stack-trace.gif" width="600" height="450">
 
 ## 4. Excepciones personalizadas
 > - Se pueden crear excepciones personalizadas extendiendo la clase `RuntimeException`.
