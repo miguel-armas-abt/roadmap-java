@@ -26,7 +26,7 @@
 > Dependiendo de las convenciones del equipo, los sufijos en los nombres de las clases tipo DTO pueden variar:
 > - `_DTO`: Objeto que encapsula los datos útiles para la lógica de negocio o transporte hacia otras capas.
 > - `_Entity`: Objeto que encapsula los datos provenientes de una base de datos SQL.
-> - `_Model`: Objeto que encapsula los datos provenientes de una base de datos NoSQL.
+> - `_Document`: Objeto que encapsula los datos provenientes de una base de datos NoSQL.
 > - `_RequestWrapper`: Objeto que encapsula los datos que se envían en una solicitud a un servicio externo.
 > - `_ResponseWrapper`: Objeto que encapsula los datos que se recuperan en la respuesta de un servicio externo.
 

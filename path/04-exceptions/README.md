@@ -4,37 +4,53 @@
 
 ---
 
-## 1. Conceptos clave
+## Conceptos clave
 
 > #### Excepciones
-> - Son subclases de `java.lang.Exception`. 
-> - Se utilizan para <u>reaccionar</u> ante condiciones inesperadas de manera controlada.
+> Son subclases de `java.lang.Exception`, utilizadas para <u>reaccionar</u> ante condiciones inesperadas de manera controlada.
 
 > #### Error
-> Problema grave que no puede ser controlado en tiempo de ejecución. Por ejemplo, fallo de memoria.
+> Problema grave que no puede ser controlado en tiempo de ejecución. Por ejemplo, desbordamiento de la memoria.
 
-## 2. Tipos de excepciones
+---
 
-> ### checked exception
-> - Se verifican en <u>tiempo de compilación</u>.
-> - El compilador `javac` obliga a declararlas con `throws` o manejarlas con un bloque `try-catch`. 
-> - **Ej.** `IOException`, `SQLException`
+## Tipos de excepciones
+
+### 1. Checked exception
+> Se verifican en **<u>tiempo de compilación</u>**, ya que el `javac` obliga a declararlas con `throws` o controlarlas con `try-catch`. 
+> Por ejemplo, `IOException`, `SQLException`, etc.
 > 
 > ```java
->   try {
-> 
->     File file = new File("data.txt");
->     FileReader fr = new FileReader(file); // Checked exception
-> 
->   } catch(IOException exception) {
->     e.printStackTrace();
+> /**
+>   * Este método utiliza "throws" para declarar que no manejará la "checked exception",
+>   * delegando la responsabilidad al método que lo invoque.
+>   */
+>   private static void readFile(String fileName) throws FileNotFoundException {
+>     File file = new File(fileName);
+>     FileReader fileReader = new FileReader(file);
 >   }
 > ```
+>
+> ```java
+>  /**
+>   * Este método utiliza "try" para envolver el código que puede producir una "checked exception",
+>   * y usa "catch" para controlarla y transformarla en una "unchecked exception".
+>   */
+>  private static void readFile(String fileName) {
+>    try {
+>
+>      File file = new File(fileName);
+>      FileReader fileReader = new FileReader(file);
+>
+>    } catch (FileNotFoundException exception) {
+>      throw new RuntimeException("File " + fileName + " not found", exception);
+>    }
+>  }
+> ```
 
-> ### unchecked exception
-> - Ocurren en <u>tiempo de ejecución</u>.
-> - No es necesario declararlas, ni manejarlas explícitamente.
-> - **Ej.** `NullPointerException`, `ArithmeticException`
+### 2. Unchecked exception
+> Ocurren en **<u>tiempo de ejecución</u>** y no es necesario manejarlas explícitamente.
+> Por ejemplo, `NullPointerException`, `ArithmeticException`, etc.
 > 
 > ```java
 >   int result = 10 / 0; // Unchecked exception: ArithmeticException
@@ -43,14 +59,14 @@
 <img src="../resources/images/exceptions/exceptions.png" width="700" height="280">
 
 ## 3. Stack trace
-> - La pila de errores permite rastrear el origen de un error en el programa.
+> - La pila de errores permite rastrear el origen de un error en la aplicación.
 > - Ofrece trazabilidad de los métodos que fueron llamados antes de que ocurriera la excepción.
 > <br> <br>
->  <img src="../resources/images/exceptions/stack-trace.gif" width="600" height="450">
+>  <img src="../resources/images/exceptions/stack-trace.png" width="600" height="200">
 
 ## 4. Excepciones personalizadas
-> - Se pueden crear excepciones personalizadas extendiendo la clase `RuntimeException`.
-> - Son útiles para representar condiciones inesperadas específicas de la aplicación.
+> - Se utilizan para distinguir errores del sistema con errores relacionados a la lógica de la aplicación.
+> - Se pueden crear extendiendo la clase `RuntimeException` (unchecked exceptions).
 > 
 > ```java
 > public class BusinessException extends RuntimeException {

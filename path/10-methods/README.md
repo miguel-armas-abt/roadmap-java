@@ -4,87 +4,93 @@
 
 ---
 
-> - Los métodos son bloques de código que realizan una tarea específica y pueden ser llamados desde otras partes del programa.
-> - Los métodos se utilizan para organizar y reutilizar código, facilitando el mantenimiento y mejorando la legibilidad.
+> - Un método es un bloque de código que recibe ciertos datos, los procesa y puede devolver una respuesta.
+> - Pueden ser llamados desde otras partes del programa.
 
-![Methods](../resources/images/methods/method.jpg)
+## Tipos de métodos
 
-| Elemento                  | Descripción                                                                                                                                  |
-|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| **Parámetros de entrada** | Son los valores que se pasan al método para que realice su tarea, y pueden usarse dentro del cuerpo del método.                              |
-| **Tipo de retorno**       | Es el tipo de dato que devuelve el método después de completar su tarea. Si un método no devuelve ningún valor, su tipo de retorno es `void` |
-| **Nombre del método**     | El nombre del método debe ser descriptivo y representar claramente lo que hace el método, facilitando su comprensión de uso.                 |
+> **Funciones**
+> 
+> <img src="../resources/images/methods/function.svg" width="400" height="100">
 
-> Ejemplo de una función
->```java
+> **Procedimientos**
+>
+> <img src="../resources/images/methods/procedure.svg" width="400" height="100">
+
+### 1. Funciones
+> <img src="../resources/images/methods/function.png" width="800" height="200">
+>
+> - Una función es un método que realiza una tarea y devuelve un valor (datos primitivos u objetos) con la instrucción `return`.
+> - Son útiles cuando necesitas realizar un procesamiento y recuperar algún valor de vuelta.
+> - La instrucción `return` debe devolver una variable del <u>mismo tipo que el retorno del método</u>.
+>
+> ```java
+> //obtener el ID de un producto
+> public long getId() {
+>   return this.id;
+> }
+> ```
+>
+> ```java
+> //calcular el interés
 > public double calculateInterest(double balance, double interestRate) {
 >   double interest = balance * interestRate;
 >   return interest;
 > }
->```
+> ```
 >
-> Ejemplo de un procedimiento
->```java
-> public void printMessage(String name) {
->   System.out.println("Hello " + name);
-> }
->```
-
-## Principio DRY
-El principio DRY (Don't Repeat Yourself) sugiere evitar la duplicación de código mediante la creación de métodos reutilizables.
-
-> > Imagina un sistema bancario que ofrece dos productos diferentes: cuentas de ahorro y cuentas de inversión.
-> > Ambos productos requieren cálculos de intereses, pero con diferentes tasas de interés.
-> 
-> El siguiente código repite la lógica de cálculo de interés, lo cual lo hace difícil de mantener.
-> 
 > ```java
-> public static void main(String[] args) {
->   Scanner scanner = new Scanner(System.in);
->   System.out.println("Ingrese el saldo de la cuenta de ahorros: ");
->   double savingsBalance = scanner.nextDouble();
-> 
->   System.out.println("Ingrese el saldo de la cuenta de inversión: ");
->   double investmentBalance = scanner.nextDouble();
-> 
->   //calculo del interés para la cuenta de ahorro
->   double savingsInterest = savingsBalance * 0.03;
->   savingsBalance += savingsInterest;
->   System.out.println("Saldo actualizado: " + savingsBalance);
-> 
->   //calculo del interés para la cuenta de inversión
->   double investmentInterest = investmentBalance * 0.07;
->   investmentBalance += investmentInterest;
->   System.out.println("Saldo actualizado: " + investmentBalance);
+> //determinar si un cliente es mayor de edad
+> public boolean isOfLegalAge(Customer customer) {
+>   boolean isOfLegalAge = (customer.getAge() <= 18);
+>   return isOfLegalAge;
 > }
 > ```
-> 
-> El siguiente código elimina la duplicación de código mediante la reutilización de un método.
-> 
+>
 > ```java
-> public static void main(String[] args) {
->   double savingsBalance = requestBalance("ahorros");
->   double updatedSavingsBalance = calculateUpdatedBalance(savingsBalance, 0.03);
->   printMessage(updatedSavingsBalance);
-> 
->   double investmentBalance = requestBalance("inversión");
->   double updatedInvestmentBalance = calculateUpdatedBalance(savingsBalance, 0.07);
->   printMessage(updatedInvestmentBalance);
+> //generar la descripción de una fecha
+> public String generateDateDescription(String dateStr) {
+>   DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+>   LocalDate date = LocalDate.parse(dateStr, formatter);
+>   return date.format(DateTimeFormatter.ofPattern("d 'de' MMMM 'de' yyyy", new Locale("es", "ES")));
 > }
-> 
-> public static double requestBalance(String accountType) {
->   Scanner scanner = new Scanner(System.in);
->   System.out.println("Ingrese el saldo de la cuenta de " + accountType + ": ");
->   return scanner.nextDouble();
+> ```
+>
+> ```java
+> //filtrar un producto mediante su ID
+> public Product findById(String id, List<Product> products) {
+>   for(Product product: products) {
+>     if(product.getId().equals(id))
+>       return product;
+>   }
+>   return null;
 > }
+> ```
+
+### 2. Procedimientos
+> <img src="../resources/images/methods/procedure.png" width="800" height="200">
 > 
-> public static doube calculateUpdatedBalance(double balance, double interestRate) {
->   double interest = balance * interestRate;
->   balance += interest;
->   return balance;
+> - Un procedimiento es un método que realiza una tarea, pero no devuelve ningún valor, para lo cual el tipo de retorno es `void` (vacío).
+> - Son útiles cuando necesitas realizar una acción, pero no requieres un valor de vuelta.
+>
+> ```java
+> //asignar el ID de un producto
+> public void setId(long id) {
+>   this.id = id;
 > }
-> 
-> public static void printMessage(double updatedBalance) {
->   System.out.println("Saldo actualizado " + updatedBalance);
+> ```
+>
+> ```java
+> //validar formato de un número celular
+> public void validatePhone(String cellphoneNumber) {
+>   if(!cellphoneNumber.matches("^9\\d{8}$"))
+>     throw new IllegalArgumentException("InvalidFormatPhone");
+> }
+> ```
+>
+> ```java
+> //eliminar registro de producto
+> public void deleteProduct(long id) {
+>   productRepository.delete(id);
 > }
 > ```
