@@ -80,7 +80,8 @@
 
 ### Liskov Substitution
 > 📋 **Definición** <br>
-> Este principio indica que una subclase debe ser sustituible por su superclase. Si al hacer esto el programa falla, entonces estaremos violando este principio.
+> - Establece que una subclase debe ser sustituible por su superclase sin alterar el comportamiento esperado del programa.
+> - Una implementación incorrecta rompe este principio al introducir comportamientos incompatibles en las subclases.
 >
 > 📌 **Ejemplo** <br>
 >```java
