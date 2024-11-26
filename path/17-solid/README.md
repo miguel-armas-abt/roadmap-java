@@ -37,46 +37,6 @@
 > 📋 **Definición** <br>
 > - Los componentes deben estar <u>abiertos para su extensión, pero cerrados para su modificación</u>.
 > - Significa que se debe poder añadir nuevas funcionalidades sin alterar el código existente.
->
-> 📌 **Ejemplo** <br>
-> Agregar un nuevo tipo de tarjeta implica modificar el método:
-> ```java
-> public double retrieveBenefit(CreditCard card) {
->   if(card.getType().equals("CLASSIC")) 
->     return 0.01;
-> 
->   if(card.getType().equals("GOLD")) 
->     return 0.02;
-> 
->   if(card.getType().equals("PLATINUM")) 
->     return 0.03;
-> 
->   return 0.0;
-> }
-> ```
-> 
-> 💡 **Solución** <br>
-> En general, se debe generar una abstracción de la funcionalidad e implementar cada tipo en una clase concreta separada.
-> ```java
-> public abstract class CreditCard {
->   public abstract double getBenefit();
-> }
-> ```
-> ```java
-> public class ClassicCard extends CreditCard {
->   @Override
->   public double getBenefit() {
->     return 0.01;
->   }
-> }
-> ```
-> ```java
-> public class CreditCardService() {
->   public double retrieveBenefit(CreditCard card) {
->     return card.getBenefit();
->   }
-> }
-> ```
 
 ### Liskov Substitution
 > 📋 **Definición** <br>
@@ -97,12 +57,6 @@
 > - Este principio indica que las clases no deberían verse forzadas a depender de interfaces que no usan.
 > - Las interfaces deben ser específicas y contener solo los métodos que realmente se necesitan.
 > - Es mejor tener varias interfaces pequeñas y específicas que una única interfaz grande.
->
-> 📌 **Ejemplo** <br>
->//ToDo
->
-> 💡 **Solución** <br>
-> //ToDo
 
 ### Dependency Inversión
 > 📋 **Definición** <br>

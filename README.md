@@ -25,6 +25,11 @@
 - [15. Object](path/15-object/README.md)
 - [16. Maven](path/16-maven/README.md)
 - [17. Principios SOLID](path/17-solid/README.md)
+
+> 📂 [**poc-single-responsability** - Single Responsability](https://github.com/miguel-armas-abt/poc-single-responsability) <br>
+> 📂 [**poc-open-closed** - Open / Closed](https://github.com/miguel-armas-abt/poc-open-closed) <br>
+> 📂 [**poc-interface-segregation** - Interface segregation](https://github.com/miguel-armas-abt/poc-interface-segregation) <br>
+
 - [18. Patrones de diseño](path/18-design-patterns/README.md)
 - [19. Arquitectura de paquetes](path/19-package-architecture/README.md)
 
