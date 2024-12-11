@@ -60,7 +60,7 @@ El diseño de bases de datos sigue un conjunto de etapas para garantizar que el 
 >
 > > **Caso de uso**: Gestionar el préstamo de libros de una biblioteca.
 > 
-<img src="../resources/images/database/ER.svg" width="600" height="260">
+<img src="../resources/images/22-database/ER.svg" width="600" height="260">
 
 - `Un` usuario puede solicitar `0 o muchos` préstamos.
 - `Un` préstamo puede ser solicitado por `un` solo usuario.

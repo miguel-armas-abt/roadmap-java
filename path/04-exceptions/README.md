@@ -56,7 +56,7 @@
 >   int result = 10 / 0; // Unchecked exception: ArithmeticException
 > ```
 
-<img src="../resources/images/exceptions/exceptions.png" width="700" height="280">
+<img src="../resources/images/04-exceptions/exceptions.png" width="700" height="280">
 
 ## 3. Stack trace
 > - La pila de errores permite rastrear el origen de un error en la aplicación.

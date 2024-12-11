@@ -8,7 +8,7 @@
 > - La clase `Object` es la superclase de todas las clases en Java. Esto significa que todas las clases en Java heredan directa o indirectamente de `Object`. 
 > - Proporciona un conjunto de métodos que pueden ser utilizados por todas las clases. Por ejemplo, `toString()`, `equals()`, `hashCode()`, etc.
 >
-> <img src="../resources/images/oop/object.png" width="200" height="250">
+> <img src="../resources/images/11-oop/object.png" width="200" height="250">
 
 > #### toString()
 > - Devuelve una representación del objeto en forma de cadena.

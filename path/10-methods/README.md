@@ -11,14 +11,14 @@
 
 > **Funciones**
 > 
-> <img src="../resources/images/methods/function.svg" width="400" height="100">
+> <img src="../resources/images/10-methods/function.svg" width="400" height="100">
 
 > **Procedimientos**
 >
-> <img src="../resources/images/methods/procedure.svg" width="400" height="100">
+> <img src="../resources/images/10-methods/procedure.svg" width="400" height="100">
 
 ### 1. Funciones
-> <img src="../resources/images/methods/function.png" width="800" height="200">
+> <img src="../resources/images/10-methods/function.png" width="800" height="200">
 >
 > - Una función es un método que realiza una tarea y devuelve un valor (datos primitivos u objetos) con la instrucción `return`.
 > - Son útiles cuando necesitas realizar un procesamiento y recuperar algún valor de vuelta.
@@ -68,7 +68,7 @@
 > ```
 
 ### 2. Procedimientos
-> <img src="../resources/images/methods/procedure.png" width="800" height="200">
+> <img src="../resources/images/10-methods/procedure.png" width="800" height="200">
 > 
 > - Un procedimiento es un método que realiza una tarea, pero no devuelve ningún valor, para lo cual el tipo de retorno es `void` (vacío).
 > - Son útiles cuando necesitas realizar una acción, pero no requieres un valor de vuelta.

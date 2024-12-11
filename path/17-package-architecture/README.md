@@ -6,7 +6,7 @@
 
 > La arquitectura de paquetes se refiere a la organización de las clases en módulos dentro de una aplicación de software.
 
-<img src="../resources/images/package-architecture/package-architecture.svg" width="420" height="420">
+<img src="../resources/images/17-package-architecture/package-architecture.svg" width="480" height="480">
 
 ```
   com.bcp.yape.transfers:

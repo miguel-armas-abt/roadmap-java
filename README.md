@@ -24,30 +24,32 @@
 - [14. Palabra reservada `static`](path/14-static/README.md)
 - [15. Object](path/15-object/README.md)
 - [16. Maven](path/16-maven/README.md)
-- [17. Principios SOLID](path/17-solid/README.md)
+
+- [17. Arquitectura de paquetes](path/17-package-architecture/README.md)
+
+> 📂 [**poc-java-crud-lists**](https://github.com/miguel-armas-abt/poc-java-crud-lists) <br>
+> 📂 [**poc-java-crud-csv**](https://github.com/miguel-armas-abt/poc-java-crud-csv) <br>
+
+- [19. Principios SOLID](path/19-solid/README.md)
 
 > 📂 [**poc-java-single-responsability**](https://github.com/miguel-armas-abt/poc-java-single-responsability) <br>
 > 📂 [**poc-java-open-closed**](https://github.com/miguel-armas-abt/poc-java-open-closed) <br>
 > 📂 [**poc-java-interface-segregation**](https://github.com/miguel-armas-abt/poc-java-interface-segregation) <br>
 
-- [18. Patrones de diseño](path/18-design-patterns/README.md)
+- [20. Patrones de diseño](path/20-design-patterns/README.md)
 
 > 📂 [**poc-java-strategy**](https://github.com/miguel-armas-abt/poc-java-strategy) <br>
 
-- [19. Arquitectura de paquetes](path/19-package-architecture/README.md)
-
-> 📂 [**poc-java-crud-lists**](https://github.com/miguel-armas-abt/poc-java-crud-lists) <br>
-> 📂 [**poc-java-crud-csv**](https://github.com/miguel-armas-abt/poc-java-crud-csv) <br>
-> 📂 [**poc-java-crud-generics**](https://github.com/miguel-armas-abt/poc-java-crud-generics)
-
-- [20. Redes](path/20-network/README.md)
+- [21. Redes](path/21-network/README.md)
 
 > 📂 [**poc-java-client-server**](https://github.com/miguel-armas-abt/poc-java-client-server)
 
-- [21. Base de datos relacional](path/21-database/README.md)
+- [22. Bases de datos relacionales](path/22-database/README.md)
 
 > 📂 [**poc-java-jdbc**](https://github.com/miguel-armas-abt/poc-java-jdbc) <br>
 
 ---
+
+> 📂 [**poc-java-crud-generics**](https://github.com/miguel-armas-abt/poc-java-crud-generics)
 
 
