@@ -99,7 +99,7 @@ El diseño de bases de datos sigue un conjunto de etapas para garantizar que el 
 
 ---
 
-**orders** (`PK(id)`, `customer_id`, `total`)
+**orders** (`PK(id)`, `FK(customer_id)` references a customers, `total`)
 
 | id | customer_id | total |
 |----|-------------|-------|
@@ -250,7 +250,7 @@ CREATE TABLE order_details (
 > #### N:N
 > - Se necesita una tabla intermedia (tabla de unión) para manejar la relación.
 > - La tabla intermedia contiene 2 llaves foráneas, que referencian a las llaves primarias de las tablas involucradas.
-> - La relación N:N no puede implementarse directamente en un modelo relacional.
+> - ⚠️ La relación N:N no puede implementarse directamente en un modelo relacional.
 > > **students** (`PK(id)`, name) <br>
 > > **courses** (`PK(id)`, title) <br>
 > > **students_courses** (`PK(student_id, course_id)`, `FK(student_id)` references students, `FK(course_id)` references courses) <br>
