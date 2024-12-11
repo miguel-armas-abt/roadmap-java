@@ -8,6 +8,7 @@
 [2.1. Modelo conceptual](#21-modelo-conceptual) <br>
 [2.2. Modelo lógico](#22-modelo-lógico) <br>
 [2.3. Modelo físico](#23-modelo-físico) <br>
+[2.4. Reglas generales de cardinalidad](#24-reglas-generales-de-cardinalidad) <br>
 
 ---
 

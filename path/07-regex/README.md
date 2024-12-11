@@ -1,6 +1,6 @@
 # REGEX
 
-[← Regresar a notas](../../../../../../../../README.md) <br>
+[← Regresar a notas](../../README.md) <br>
 
 ---
 
