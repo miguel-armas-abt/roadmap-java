@@ -30,7 +30,7 @@
 > - Cada componente debe tener una única responsabilidad.
 > - Significa que si un componente tiene más de una razón para cambiar, incumple este principio.
 >
-> 📌 **Ejemplo** <br>
+> ⚠️ **Ejemplo** <br>
 > Si una clase provee lógica de negocio y a la vez lógica de acceso a datos, entonces incumple este principio.
 
 ### Open Closed

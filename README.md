@@ -35,12 +35,13 @@
 > 📂 [**poc-java-single-responsability**](https://github.com/miguel-armas-abt/poc-java-single-responsability) <br>
 > 📂 [**poc-java-open-closed**](https://github.com/miguel-armas-abt/poc-java-open-closed) <br>
 > 📂 [**poc-java-interface-segregation**](https://github.com/miguel-armas-abt/poc-java-interface-segregation) <br>
+> 📂 [**poc-java-dependency-inversion**](https://github.com/miguel-armas-abt/poc-java-dependency-inversion) <br>
 
 - [20. Patrones de diseño](path/20-design-patterns/README.md)
 
 > 📂 [**poc-java-strategy**](https://github.com/miguel-armas-abt/poc-java-strategy) <br>
 
-- [21. Redes](path/21-network/README.md)
+- [21. Cliente - Servidor](path/21-network/README.md)
 
 > 📂 [**poc-java-client-server**](https://github.com/miguel-armas-abt/poc-java-client-server)
 
