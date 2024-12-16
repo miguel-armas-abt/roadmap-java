@@ -61,8 +61,9 @@
 ## 3. Stack trace
 > - La pila de errores permite rastrear el origen de un error en la aplicación.
 > - Ofrece trazabilidad de los métodos que fueron llamados antes de que ocurriera la excepción.
-> <br> <br>
->  <img src="../resources/images/exceptions/stack-trace.png" width="600" height="200">
+> <br>
+>
+> <img src="../resources/images/04-exceptions/stack-trace.png" width="600" height="200">
 
 ## 4. Excepciones personalizadas
 > - Se utilizan para distinguir errores del sistema con errores relacionados a la lógica de la aplicación.

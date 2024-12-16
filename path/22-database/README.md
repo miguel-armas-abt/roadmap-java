@@ -5,10 +5,11 @@
 ---
 
 [1. Conceptos clave](#1-conceptos-clave) <br>
-[2.1. Modelo conceptual](#21-modelo-conceptual) <br>
-[2.2. Modelo lógico](#22-modelo-lógico) <br>
-[2.3. Modelo físico](#23-modelo-físico) <br>
-[2.4. Reglas generales de cardinalidad](#24-reglas-generales-de-cardinalidad) <br>
+[2. Reglas generales de cardinalidad](#2-reglas-generales-de-cardinalidad) <br>
+[3.1. Modelo conceptual](#31-modelo-conceptual) <br>
+[3.2. Modelo lógico](#32-modelo-lgico) <br>
+[3.3. Modelo físico](#33-modelo-fsico) <br>
+
 
 ---
 
@@ -50,11 +51,33 @@
 
 --- 
 
-## 2. Diseño de bases de datos
+## 2. Reglas generales de cardinalidad
+
+> #### 1:1
+> - La FK se puede colocar en cualquiera de las dos tablas.
+> > **users** (`PK(id)`, `username`) <br>
+> > **personal_details** (`PK(id)`, `FK(user_id)` references users, `full_name`)
+
+> #### 1:N
+> - La FK se coloca en la tabla del lado "muchos".
+> - Es más eficiente asociar cada registro de "muchos" con un único registro de "uno".
+> > **customers** (`PK(id)`, name) <br>
+> > **orders** (`PK(id)`, `FK(customer_id)` references customers, `total`)
+
+> #### N:N
+> - Se necesita una tabla intermedia (tabla de unión) para manejar la relación.
+> - La tabla intermedia contiene 2 llaves foráneas, que referencian a las llaves primarias de las tablas involucradas.
+> - ⚠️ La relación N:N no puede implementarse directamente en un modelo relacional.
+> > **students** (`PK(id)`, name) <br>
+> > **courses** (`PK(id)`, title) <br>
+> > **students_courses** (`PK(student_id, course_id)`, `FK(student_id)` references students, `FK(course_id)` references courses) <br>
+
+
+## 3. Diseño de bases de datos
 El diseño de bases de datos sigue un conjunto de etapas para garantizar que el sistema de datos sea eficiente, funcional y fácil de mantener.
 
 
-### 2.1. Modelo conceptual
+### 3.1. Modelo conceptual
 > - Consiste en representar gráficamente las entidades, sus atributos y las relaciones entre ellas.
 > - Se utiliza un "Diagrama Entidad-Relación (ER)" que incluye cardinalidades para representar las relaciones.
 >
@@ -67,7 +90,7 @@ El diseño de bases de datos sigue un conjunto de etapas para garantizar que el 
 - `Un` préstamo contiene `un` solo libro.
 - `Un` libro puede estar contenido en `0 o muchos` préstamos.
 
-### 2.2. Modelo lógico
+### 3.2. Modelo lógico
 > - Consiste en refinar el modelo conceptual mediante el proceso de normalización.
 > - La normalización permite reducir la redundancia y asegurar la consistencia de los datos.
 > 
@@ -81,7 +104,7 @@ El diseño de bases de datos sigue un conjunto de etapas para garantizar que el 
 | 1        | Mark Zuckerberg | 987654321      | Bebida       | 1                | 20.00      | 50.00 | Av. Siempre Viva 123 | San Borja  |
 | 2        | Elon Musk       | 987654322      | Hamburguesa  | 2                | 15.00      | 30.00 | Calle Falsa 456      | Miraflores |
 
-> #### 2.2.1. Primera forma normal (1FN)
+> #### 3.2.1. Primera forma normal (1FN)
 > **Objetivo:** <br>
 > Cada celda de una tabla debe contener un único valor (datos atómicos) y no debe haber filas duplicadas. <br>
 >
@@ -119,7 +142,7 @@ El diseño de bases de datos sigue un conjunto de etapas para garantizar que el 
 
 ---
 
-> #### 2.2.2. Segunda forma normal (2FN)
+> #### 3.2.2. Segunda forma normal (2FN)
 > **Objetivo**: <br>
 > Todos los atributos no clave deben depender completamente de la llave primaria.
 >
@@ -152,7 +175,7 @@ El diseño de bases de datos sigue un conjunto de etapas para garantizar que el 
 
 ---
 
-> #### 2.2.3. Tercera forma normal (3FN)
+> #### 3.2.3. Tercera forma normal (3FN)
 > **Objetivo**: <br>
 > No debe haber dependencias transitivas (un atributo no clave no debe depender de otro atributo no clave).
 >
@@ -160,9 +183,12 @@ El diseño de bases de datos sigue un conjunto de etapas para garantizar que el 
 > Eliminar columnas que dependan de otras columnas no clave y crear tablas adicionales para ellas.
 
 - La tabla `customers` tiene la siguiente dependencia transitiva:
-  - customers.id → address *(La dirección depende del cliente)*
-  - address → district *(El distrito depende de la dirección)*
-  - ¿El distrito depende del cliente? Esto viola la 3FN, ya que el distrito no depende directamente del cliente, sino de un atributo no clave de la dirección.
+  - *La dirección depende del cliente*
+  - *El distrito depende de la dirección*
+
+**¿El distrito depende del cliente?**<br> 
+Esto viola la 3FN, ya que el distrito no depende directamente del cliente, sino de un atributo de la dirección.
+
 - Se debe crear la tabla `addresses` que incluya el distrito para evitar la transitividad.
 
 ---
@@ -192,7 +218,7 @@ El diseño de bases de datos sigue un conjunto de etapas para garantizar que el 
 > **products** (`PK(id)`, `name`, `unit_price`) <br>
 > **order_details** (`PK(order_id, product_id)`, `FK(order_id)` references orders, `FK(product_id)` references products, `quantity`)
 
-### 2.3. Modelo físico
+### 3.3. Modelo físico
 El siguiente script funciona para MySQL.
 
 
@@ -234,24 +260,3 @@ CREATE TABLE order_details (
 );
 
 ```
-
-### 2.4. Reglas generales de cardinalidad
-
-> #### 1:1
-> - La FK se puede colocar en cualquiera de las dos tablas.
-> > **users** (`PK(id)`, `username`) <br>
-> > **personal_details** (`PK(id)`, `FK(user_id)` references users, `full_name`)
-
-> #### 1:N
-> - La FK se coloca en la tabla del lado "muchos".
-> - Es más eficiente asociar cada registro de "muchos" con un único registro de "uno".
-> > **customers** (`PK(id)`, name) <br>
-> > **orders** (`PK(id)`, `FK(customer_id)` references customers, `total`)
-
-> #### N:N
-> - Se necesita una tabla intermedia (tabla de unión) para manejar la relación.
-> - La tabla intermedia contiene 2 llaves foráneas, que referencian a las llaves primarias de las tablas involucradas.
-> - ⚠️ La relación N:N no puede implementarse directamente en un modelo relacional.
-> > **students** (`PK(id)`, name) <br>
-> > **courses** (`PK(id)`, title) <br>
-> > **students_courses** (`PK(student_id, course_id)`, `FK(student_id)` references students, `FK(course_id)` references courses) <br>
