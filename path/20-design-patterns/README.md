@@ -110,6 +110,8 @@
 
 ### Dependency Injection
 
+[Ir a Inyección de dependencias →](./20.1-dependency-injection/README.md) <br>
+
 --- 
 
 Los siguientes patrones no se implementan directamente con frecuencia, pero frameworks como Spring los utilizan internamente para gestionar eficientemente los objetos y controlar su ciclo de vida.
