@@ -17,7 +17,8 @@
 > Se refiere a que una clase tiene métodos con el mismo nombre, pero diferentes tipos de parámetros.
 
 > #### Constructor
-> Es un método que tiene el mismo nombre que la clase y permite la creación o <u>instanciación</u> de un nuevo objeto. El método constructor puede ser sobrecargado.
+> - Es un método que tiene el mismo nombre que la clase y permite la creación o <u>instanciación</u> de un nuevo objeto. 
+> - El método constructor puede ser sobrecargado.
 
 | Clase                                                                  | Objeto                                                                       |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|

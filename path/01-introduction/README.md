@@ -20,7 +20,7 @@
 > Es el lenguaje más básico que entiende una computadora, compuesto exclusivamente de instrucciones en código binario (0s y 1s).
 
 > #### Lenguaje de alto nivel
-> Es un tipo de lenguaje de programación que se asemeja más al lenguaje humano y está diseñado para ser fácil de entender y usar por los programadores (`Java`, `Python`, `GO`, etc).
+> Es un tipo de lenguaje de programación que se asemeja más al lenguaje humano y está diseñado para ser fácil de entender y usar por los programadores (`Java`, `Python`, `Go`, etc.).
 
 > #### IDE (Entorno de Desarrollo Integrado)
 > Es una aplicación que proporciona un conjunto de herramientas para escribir, probar y depurar código de manera eficiente, mejorando la productividad del programador.
@@ -29,38 +29,38 @@
 > Es el conjunto de instrucciones escritas en un lenguaje de programación.
 
 > #### Compilación
-> Es el proceso de traducción del código fuente escrito en un lenguaje de programación entendible por el humano a un lenguaje de bajo nivel que la computadora pueda entender.
+> Es el proceso de traducción del código fuente escrito en un lenguaje de programación entendible por el humano a un lenguaje de bajo nivel que la computadora pueda entender y ejecutar.
 
 > #### Tiempo de compilación (compile time)
-> Se refiere al periodo de tiempo en el que el compilador convierte el código fuente de un programa en código de máquina ejecutable. 
-> Durante este proceso, el compilador analiza la sintaxis del código, verifica su coherencia y genera el código ejecutable.
+> - Se refiere al periodo en el que el compilador convierte el código fuente en código de máquina o bytecode ejecutable.  
+> - Durante este proceso, el compilador analiza la sintaxis del código, verifica su coherencia y genera el código ejecutable.  
 
 > #### Tiempo de ejecución (runtime)
-> Se refiere al periodo de tiempo en que el programa se está ejecutando. 
-> Durante este periodo el programa interactúa con las variables que se han declarado en el código, las modifica, las lee o las elimina según el comportamiento del programa.
+> - Es el periodo en el que el programa se está ejecutando y realizando las operaciones definidas en el código.  
+> - Durante este tiempo, el programa interactúa con las variables, realiza cálculos, gestiona memoria y responde a eventos del usuario.
 
 > #### JDK (Java Development Kit)
 > Es un conjunto de herramientas que proporciona todo lo necesario para programar en Java:
-> 
-> > #### Compilador de java `javac` <br>
-> > Se encarga de convertir nuestro código fuente (archivo con extensión .java) en bytecode (archivo con extensión .class)
+>
+> > #### Compilador de Java `javac` <br>
+> > Convierte el código fuente `.java` en bytecode `.class`.
 >
 > > #### Java Runtime Environment (JRE) `java` <br>
-> > Es la implementación de la **Java Virtual Machine (JVM)** para cada sistema operativo. Por su parte la JVM es una máquina virtual
-> > que interpreta y <u>ejecuta</u> el bytecode de Java.
+> > Es la implementación de la **Java Virtual Machine (JVM)** para cada sistema operativo.  
+> > La JVM interpreta y ejecuta el bytecode de Java, asegurando que los programas puedan ejecutarse en cualquier máquina que tenga instalado el JRE.
 >
 > ![Compilación y ejecución](../resources/images/01-introduction/compilation-and-execution.png)
-> 
+>
 > - [Manual instalar JDK](https://github.com/miguel-armas-abt/technical-resources/blob/main/02_backend/java/jdk/install/README.md)
 
-> #### Variables de entorno
-> Son valores que se almacenan en el sistema operativo y que pueden ser accedidos por los programas. Por ejemplo, una variable de entorno común es `PATH`, que almacena una lista de directorios donde el sistema busca ejecutables cuando se lanza un comando.
-
+> #### Garbage Collector
+> Es una funcionalidad de la **JVM** que se encarga de **gestionar la memoria automáticamente**, eliminando objetos que ya no se utilizan,
+> previniendo fugas de memoria y optimizando el rendimiento del programa.  
 
 > #### Paquete (package)
-> Un paquete es un contenedor que agrupa clases facilitando la organización del código.
-> En el siguiente ejemplo se indica que la clase `DestinationAccount` pertenece al paquete `com.bcp.yape.accounts.models`.
-> 
+> Un paquete es un contenedor que agrupa clases, facilitando la organización del código.  
+> En el siguiente ejemplo, la clase `DestinationAccount` pertenece al paquete `com.bcp.yape.accounts.models`:
+>
 > ```java
 > package com.bcp.yape.accounts.models;
 > 
@@ -68,9 +68,9 @@
 >   //...
 > }
 > ```
-> 
-> La estructura de paquetes podría verse de la siguiente manera.
-> 
+>
+> La estructura de paquetes podría verse de la siguiente manera:
+>
 > ```
 > com.bcp.yape.accounts
 > ├───service
@@ -82,10 +82,11 @@
 > ```
 
 > #### Método principal (main)
-> Es el punto de entrada de una aplicación Java. Es el primer método que se ejecuta cuando se inicia un programa.
+> Es el punto de inicio desde el cual se puede ejecutar un programa.
 >
 > ```java
 > public static void main(String[] args) {
 >   // código a ejecutar
 > }
 > ```
+
