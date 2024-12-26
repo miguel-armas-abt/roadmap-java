@@ -4,17 +4,20 @@
 
 ---
 
+A continuación, se utiliza con frecuencia el término "componente" para referirnos principalmente a las clases. 
+Sin embargo, los principios de diseño de software pueden aplicarse a cualquier elemento de software, como funciones, bibliotecas, APIs, etc.
+
 ## 1. Conceptos clave
 
 > #### Acoplamiento
 > - Indica en qué medida un componente depende de otros.
-> - ⚠️ <u>Alto acoplamiento</u>: Un cambio en un componente puede impactar significativamente en otros, dificultando la evolución del sistema.
+> - ⚠️ <u>Alto acoplamiento</u>: Un cambio en un componente puede afecar a otros, dificultando la evolución del sistema.
 > - ✅ <u>Bajo acoplamiento</u>: Los componentes son independientes entre sí, lo que facilita el mantenimiento y la flexibilidad ante cambios.
 
 > #### Cohesión
-> - Indica en qué medida un componente está enfocado a una única responsabilidad.
-> - ✅ <u>Alta cohesión</u>: Facilita el mantenimiento y evolución del software debido a la legibilidad del código.
-> - ⚠️  ️<u>Baja cohesión</u>: Los componentes asumen múltiples responsabilidades, lo que los hace difíciles de entender y mantener.
+> - Indica en qué medida están bien agrupadas las responsabilidades dentro de un mismo componente.
+> - ✅ <u>Alta cohesión</u>: Cada componente hace solo una cosa y la hace bien. Es más fácil de leer y mantener.
+> - ⚠️  ️<u>Baja cohesión</u>: Un componente hace demasiadas cosas. Es más confuso y difícil de modificar.
 
 ## 2. SOLID
 > Son principios de diseño orientado a objetos que sirven como guía para mejorar la calidad del código, hacerlo más flexible y fácil de mantener.
@@ -26,64 +29,62 @@
 - <u>**D**</u>ependency Inversión *(Inversión de Dependencias)*
 
 ### Single Responsability
-> 📋 **Definición** <br>
-> - Cada componente debe tener una única responsabilidad.
-> - Significa que si un componente tiene más de una razón para cambiar, incumple este principio.
+> - Cada componente debe hacer una sola cosa.
+> - Significa que si un componente tiene más de una razón para cambiar, entonces tiene muchas responsabilidades.
 >
-> ⚠️ **Ejemplo** <br>
-> Si una clase provee lógica de negocio y a la vez lógica de acceso a datos, entonces incumple este principio.
+> > 📌 **Ejemplos** <br>
+> > - Si una clase provee lógica de negocio y a la vez lógica de acceso a datos, entonces incumple este principio.
+> > - Si una clase provee lógica para consultar transferencias, ejecutar un pago y enviar notificaciones, entonces incumple este principio.
 
 ### Open Closed
-> 📋 **Definición** <br>
-> - Los componentes deben estar <u>abiertos para su extensión, pero cerrados para su modificación</u>.
-> - Significa que se debe poder añadir nuevas funcionalidades sin alterar el código existente.
+> - Los componentes deben estar abiertos para agregar nuevas funcionalidades, pero cerrados para modificar lo que ya funciona.
+> - `Abierto para su extensión, pero cerrados para su modificación`.
+>
+> > 📌 **Ejemplos** <br>
+> > - Si necesitas añadir una nueva forma de pago, deberías poder hacerlo sin modificar el código existente de las formas de pago actuales.
+
 
 ### Liskov Substitution
-> 📋 **Definición** <br>
-> - Establece que una subclase debe ser sustituible por su superclase sin alterar el comportamiento esperado del programa.
-> - Una implementación incorrecta rompe este principio al introducir comportamientos incompatibles en las subclases.
+> - Las subclases deben comportarse como sus clases base (superclases) sin cambiar el comportamiento esperado. 
+> - `Una subclase debe ser sustituible por su superclase`
 >
-> 📌 **Ejemplo** <br>
->```java
-> CreditCard classicCard = new ClassicCard();
-> double benefit = retrieveBenefit(classicCard);
->
-> CreditCard goldCard = new GoldCard();
-> double benefit = retrieveBenefit(goldCard);
->````
+>>  📌 **Ejemplo** <br>
+>> ```java
+>>  CreditCard classicCard = new ClassicCard();
+>>  double benefit = classicCard.calculateBenefit();
+>> 
+>>  CreditCard goldCard = new GoldCard();
+>>  double benefit = goldCard.calculateBenefit();
+>> ````
 
 ### Interface Segregation
-> 📋 **Definición** <br>
-> - Este principio indica que las clases no deberían verse forzadas a depender de interfaces que no usan.
-> - Las interfaces deben ser específicas y contener solo los métodos que realmente se necesitan.
+> - Las clases no deben estar obligadas a implementar métodos que no usan.
+> - Las interfaces deben ser específicas y contener solo los métodos que las subclases necesitan.
 > - Es mejor tener varias interfaces pequeñas y específicas que una única interfaz grande.
 
 ### Dependency Inversión
-> 📋 **Definición** <br>
-> - Este principio indica que las clases no deberían depender de los detalles de implementación, sino de las abstracciones. 
-> - Significa que no se deben instanciar clases concretas en nuestras clases, sino que se deben utilizar solo abstracciones.
-> - Se logra mediante la inyección de dependencias.
+> - Las clases deben depender de abstracciones (interfaces o clases abstractas), no de implementaciones concretas.
+> - Se logra mediante la inyección de dependencias (Dependency Injection, DI).
 >
-> 📌 **Ejemplo** <br>
-> El servicio depende directamente del repository, con lo cual incumple este principio.
-> ```java
-> public class CreditCardService {
->   private CreditCardRepository repository;
-> 
->   public CreditCardService() {
->     repository = new CreditCardRepositoryImpl(); // Dependencia directa
->   }
-> }
-> ```
->
-> 💡 **Solución** <br>
-> Implementar inyección de dependencias para manejar las dependencias mediante abstracciones.
-> ```java
-> public class CreditCardService {
->   private CreditCardRepository repository;
-> 
->   public CreditCardService(CreditCardRepository repository) {
->     this.repository = repository;
->   }
-> }
-> ```
+>> 📌 **Ejemplo** <br>
+>> Incorrecto:
+>> ```java
+>> public class CreditCardService {
+>>   private CreditCardRepository repository;
+>> 
+>>   public CreditCardService() {
+>>     repository = new CreditCardRepositoryImpl(); // instancia de una clase concreta ❌
+>>   }
+>> }
+>> ```
+>>
+>> Correcto:
+>> ```java
+>> public class CreditCardService {
+>>   private CreditCardRepository repository;
+>> 
+>>   public CreditCardService(CreditCardRepository repository) {
+>>     this.repository = repository; // inyección de dependencias ✅
+>>   }
+>> }
+>> ```
