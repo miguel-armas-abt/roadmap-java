@@ -73,7 +73,7 @@ Sin embargo, los principios de diseño de software pueden aplicarse a cualquier 
 >>   private CreditCardRepository repository;
 >> 
 >>   public CreditCardService() {
->>     repository = new CreditCardRepositoryImpl(); // instancia de una clase concreta ❌
+>>     repository = new CreditCardRepositoryImpl(); // depende de una instancia de una clase concreta ❌
 >>   }
 >> }
 >> ```
@@ -84,7 +84,7 @@ Sin embargo, los principios de diseño de software pueden aplicarse a cualquier 
 >>   private CreditCardRepository repository;
 >> 
 >>   public CreditCardService(CreditCardRepository repository) {
->>     this.repository = repository; // inyección de dependencias ✅
+>>     this.repository = repository; // no depende de ninguna implementación concreta gracias a la DI ✅
 >>   }
 >> }
 >> ```
