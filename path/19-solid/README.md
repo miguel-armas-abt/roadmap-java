@@ -4,7 +4,7 @@
 
 ---
 
-A continuación, se utiliza con frecuencia el término "componente" para referirnos principalmente a las clases. 
+A continuación, se utiliza el término "componente" para referirnos a las clases. 
 Sin embargo, los principios de diseño de software pueden aplicarse a cualquier elemento de software, como funciones, bibliotecas, APIs, etc.
 
 ## 1. Conceptos clave
