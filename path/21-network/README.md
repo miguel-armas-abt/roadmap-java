@@ -1,4 +1,4 @@
-# REDES
+# CLIENTE-SERVIDOR
 
 [← Regresar a notas](../../README.md) <br>
 
