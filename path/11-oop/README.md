@@ -146,9 +146,10 @@
 
 | Clase abstracta                                                  | Interface                                                        |
 |------------------------------------------------------------------|------------------------------------------------------------------|
-| No puede ser instanciado.                                        | No puede ser instanciado.                                        |
 | Tiene métodos abstractos y no abstractos                         | Solo tiene métodos abstractos.                                   |
+| No puede ser instanciado.                                        | No puede ser instanciado.                                        |
 | La clase concreta debe implementar todos los métodos abstractos  | La clase concreta debe implementar todos los métodos abstractos. |
+
 
 > #### Diferencia entre `this` y `super`
 > - `this`

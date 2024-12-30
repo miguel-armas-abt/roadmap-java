@@ -47,7 +47,7 @@
 
 - [22. Bases de datos relacionales](path/22-database/README.md)
 
-- [23. Java 8](path/23-java8/README.md)
+- [24. Java 8](path/24-java8/README.md)
 
 > 📂 [**poc-java-jdbc**](https://github.com/miguel-armas-abt/poc-java-jdbc) <br>
 
