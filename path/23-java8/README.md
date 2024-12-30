@@ -89,14 +89,6 @@ Supplier<Integer> randomNumberGenerator = () -> random.nextInt(100);
 int random = randomNumberGenerator.get();
 ```
 
-Interfaces funcionales que necesitan dos parámetros de entrada:
-
-| Tipo de función     | Método abstracto   | Tipo de retorno | ¿Cuándo usar?                                                      |
-|---------------------|--------------------|-----------------|--------------------------------------------------------------------|
-| `BiPredicate<T,U>`  | `test(T t, U u)`   | `boolean`       | Útil cuando el `Predicate` necesita dos parámetros de entrada.     |
-| `BiFunction<T,U,R>` | `apply(T t, U u)`  | `R`             | Útil cuando el `Function` necesita dos parámetros de entrada.      |
-| `BinaryOperator<T>` | `apply(T t, T t)`  | `T`             | Útil cuando el `UnaryOperator` necesita dos parámetros de entrada. |
-| `BiConsumer<T, U>`  | `accept(T t, U u)` | `void`          | Útil cuando el `Consumer` necesita dos parámetros de entrada.      |
 
 Java ofrece la posibilidad de crear nuestras propias interfaces funcionales con `@FunctionalInterface`
 

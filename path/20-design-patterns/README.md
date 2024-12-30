@@ -41,9 +41,23 @@ Además, sirven como guía para reducir el acoplamiento e incrementar la cohesi�
 >
 > > 💡 Añadir nuevas estrategias no afecta las clases existentes.
 
-### Dependency Injection
-
-[Ir a Inyección de dependencias →](./20.1-dependency-injection/README.md) <br>
+### Dependency Injection (DI)
+> Propone delegar la inyección de las dependencias (objetos que un objeto necesita para funcionar) a otra parte del programa.
+>
+> ![DI](./../resources/images/20-design-patterns/dependency-injection.png)
+> 
+> > 💡 Oculta el detalle de implementación de las dependencias de un objeto. <br>
+> > 💡 Facilita el intercambio de implementaciones sin modificar el código dependiente.
+> 
+> > #### DI mediante constructor
+> > - Las dependencias se pasan a través del constructor.
+> > - Se utiliza para las dependencias <u>obligatorias</u>.
+> > - Las variables de instancia pueden ser marcados como `final`, asegurando que no cambien tras la construcción del objeto.
+> > - Facilita la creación manual de las dependencias (mocks) en las pruebas unitarias.
+>
+> > #### DI mediante setters
+> > - Las dependencias se pasan después de que el objeto fue creado, utilizando métodos setters.
+> > - Se utiliza para dependencias <u>opcionales</u>.
 
 ### Service
 > Service no es un patrón de diseño formal, pero se utiliza ampliamente para encapsular la lógica de negocio y/o aplicación.
