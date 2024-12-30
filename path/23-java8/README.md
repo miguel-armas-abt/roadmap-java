@@ -26,7 +26,7 @@
 ## 2. Stream API
 > - Herramienta para procesar una secuencia de datos de manera funcional a partir de una colección.
 > - Ofrece operadores para manipular la secuencia de datos.
->   - `filter`: Filtrar elementos.
+>   - `filter`: Filtrar elementos. 
 >   - `map`: Transformar elementos.
 >   - `forEach`: Iterar sobre los elementos.
 >   - `collect`: Recolectar elementos en una colección.
@@ -39,6 +39,11 @@
 >     .map(name -> new Employee(name))
 >     .collect(Collectors.toList());
 > ```
+> **filter(`user -> !ROBOT.equals(user.getType())`)** <br>
+> <img src="../resources/images/23-java8/filter.gif" width="250" height="180">
+>
+> **map(`pancake -> mapper.convert(pancake)`)** <br>
+> <img src="../resources/images/23-java8/map.gif" width="250" height="180">
 
 ## 3. Optional
 > - Herramienta para procesar un valor que podría estar presente o no, evitando `NullPointerException`.
