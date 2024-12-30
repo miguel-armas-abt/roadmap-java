@@ -2,11 +2,11 @@
 
 [← Regresar a patrones de diseño](../README.md) <br>
 
-> ⚠️ **Problema** <br>
-> Hacer que los objetos dependan de otros objetos sin tener que instanciarlos por sí mismos.
+> >⚠️ **Problema**:
+> >Hacer que los objetos dependan de otros objetos sin tener que instanciarlos por sí mismos.
 >
-> ✅ **Solución** <br>
-> Delegar la inyección de las dependencias (objetos que un objeto necesita para funcionar) a otra parte del programa.
+> >✅ **Solución**:
+> >Delegar la inyección de las dependencias (objetos que un objeto necesita para funcionar) a otra parte del programa.
 >
 > 
 > ![DI](./../../resources/images/20-design-patterns/dependency-injection.png)
