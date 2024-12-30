@@ -67,6 +67,25 @@
 > - Una interfaz funcional tiene exactamente un método abstracto.
 > - Es la base para trabajar con expresiones lambda y programación funcional en Java.
 
+### @FunctionalInterface
+Esta anotación nos permite crear nuestras propias interfaces funcionales.
+
+```java
+@FunctionalInterface
+interface StringProcessor {
+    String process(String str1, String str2); // método abstracto
+}
+
+public class Application {
+  public static void main(String[] args) {
+    StringProcessor processor = (str1, str2) -> (str1 + str2).toUpperCase(); // se asigna un cuerpo al método () -> {}
+    String result = processor.process("Hello", " world");
+  }
+}
+```
+
+### Interfaces funcionales predeterminadas
+
 | Tipo de función    | Método abstracto   | Tipo de retorno | ¿Cuándo usar?                                                                     |
 |--------------------|--------------------|-----------------|-----------------------------------------------------------------------------------|
 | `Predicate<T>`     | `test(T t)`        | `boolean`       | Condicionales.                                                                    |
@@ -90,18 +109,3 @@ int random = randomNumberGenerator.get();
 ```
 
 
-Java ofrece la posibilidad de crear nuestras propias interfaces funcionales con `@FunctionalInterface`
-
-```java
-@FunctionalInterface
-interface StringProcessor {
-    String process(String str1, String str2);
-}
-
-public class Application {
-  public static void main(String[] args) {
-    StringProcessor processor = (str1, str2) -> (str1 + str2).toUpperCase();
-    String result = processor.process("Hello", " world");
-  }
-}
-```
