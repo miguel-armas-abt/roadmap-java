@@ -46,8 +46,8 @@ Además, sirven como guía para reducir el acoplamiento e incrementar la cohesi�
 >
 > ![DI](./../resources/images/20-design-patterns/dependency-injection.png)
 > 
-> > 💡 Oculta el detalle de implementación de las dependencias de un objeto. <br>
-> > 💡 Facilita el intercambio de implementaciones sin modificar el código dependiente.
+> > 💡 Oculta el detalle de implementación de las dependencias. `new Object() ❌`  <br>
+> > 💡 Facilita el intercambio de implementaciones.
 > 
 > > #### DI mediante constructor
 > > - Las dependencias se pasan a través del constructor.
