@@ -87,26 +87,3 @@ https://regexr.com/
 > if(!email.matches("^[\\w\\.-]+@[a-zA-Z\\.]+\\.[a-zA-Z]{2,3}$"))
 >   throw new IllegalArgumentException("Invalid email format");
 > ```
-
----
-
-> > **Validar una fecha con el formato día / mes / año** `^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$`
-> - `Inicio` de cadena
-> - Seguido de uno de los siguientes casos:
->   - Número 0 seguido de un dígito del 1 al 9 `o`
->   - Número 1 o 2 seguido de un dígito del 0 al 9 `o`
->   - Número 3 seguido del número 0 o 1.
-> - Seguido de exactamente un /
-> - Seguido de uno de los siguientes casos:
->   - Número 0 seguido de un dígito del 1 al 9 `o`
->   - Número 1 seguido del número 1 o 2.
-> - Seguido de exactamente un /
-> - Seguido de cuatro `dígitos`.
-> - `Fin` de cadena.
->
-> ```java
-> if(!date.matches("^(0[1-9]\|[12][0-9]\|3[01])/(0[1-9]\|1[0-2])/\d{4}$"))
->   throw new IllegalArgumentException("Invalid date format");
-> ```
-
----
