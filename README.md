@@ -1,4 +1,4 @@
-# Banco de palabras
+# Aprendiendo Java
 
 > [README template](path/00-readme-template/README.md)
 
