@@ -47,12 +47,12 @@
 
 - [22. Bases de datos relacionales](path/22-database/README.md)
 
-- [24. Java 8](path/24-java8/README.md)
-
 > 📂 [**poc-java-jdbc**](https://github.com/miguel-armas-abt/poc-java-jdbc) <br>
 
----
+- [23. Genéricos](path/23-generics/README.md)
 
 > 📂 [**poc-java-crud-generics**](https://github.com/miguel-armas-abt/poc-java-crud-generics)
 
+- [24. Java 8](path/24-java8/README.md)
 
+---
