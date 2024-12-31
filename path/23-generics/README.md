@@ -58,8 +58,13 @@
 > #### Bounded types
 > Acotan los tipos permitidos mediante el uso de la palabra clave `extends`.
 > ```java
-> public class NumberBox<T extends Number> {
->     private T number;
+> public class Calculator<T extends Number> {
+>   public double sum(List<T> numbers) {
+>     double total = 0.0;
+>     for (T number : numbers)
+>       total += number.doubleValue();  // Convertimos a double para manejar diferentes tipos numéricos
+>     return total;
+>   }
 > }
 > ```
 
