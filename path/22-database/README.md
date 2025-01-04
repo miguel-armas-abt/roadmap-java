@@ -43,6 +43,11 @@
 > #### Cardinalidad
 > Representa la cantidad de instancias de una entidad que se relacionan con otras entidades.
 
+> #### Transacción
+> Se refiere a un conjunto de operaciones que se ejecutan como una unidad indivisible y siguen los principios `ACID`.
+> - Commit ✅: Establece que la transacción finalizó exitosamente
+> - Rollback ❌: Establece que la transacción falló y se debe reestablecer
+
 --- 
 
 ## 2. Diseño de bases de datos
