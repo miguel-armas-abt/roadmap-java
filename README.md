@@ -1,4 +1,4 @@
-# Aprendiendo Java
+# APRENDIENDO JAVA
 
 > [README template](path/00-readme-template/README.md)
 
