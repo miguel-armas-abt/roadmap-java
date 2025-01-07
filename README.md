@@ -51,8 +51,11 @@
 
 - [23. Genéricos](path/23-generics/README.md)
 
+> 📂 [**poc-java-generics**](https://github.com/miguel-armas-abt/poc-java-generics) <br>
 > 📂 [**poc-java-crud-generics**](https://github.com/miguel-armas-abt/poc-java-crud-generics)
 
 - [24. Java 8](path/24-java8/README.md)
+
+- [25. Pruebas unitarias](path/25-unit-tests/README.md)
 
 ---
