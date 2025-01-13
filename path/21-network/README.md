@@ -46,12 +46,16 @@
 
 > #### Arquitectura de red cliente / servidor
 > Describe cómo dos aplicaciones (cliente y servidor) interactúan en una red para intercambiar datos.
-> - **Servidor**: Provee <u>servicios</u> al cliente.
-> - **Cliente**: Consume los <u>servicios</u> que ofrece el servidor.
+> > **Servidor**: Provee <u>servicios</u> al cliente.
+> 
+> > **Cliente**: Consume los <u>servicios</u> que ofrece el servidor.
 
 > #### Servicio
-> Un servicio es un conjunto de <u>funcionalidades o recursos</u> que el servidor pone a disposición de las aplicaciones cliente.
-> - **Solicitud (Request)**: El cliente envía una petición al servicio para recuperar datos o ejecutar una acción específica.
-> - **Respuesta (Response)**: El servidor procesa la solicitud y envía una respuesta al cliente, proporcionando los resultados solicitados o confirmando que la acción se ha realizado.
+> Un servicio es una <u>funcionalidad o recurso</u> que el servidor pone a disposición de las aplicaciones cliente a través de un endpoint. 
+> > **Endpoint**: Es un punto de acceso, representado como una URL, donde el cliente puede interacturar con el servidor para consumir el servicio.
+> 
+> > **Solicitud (Request)**: Es una petición que el cliente envía al servidor para recuperar datos o ejecutar una acción específica.
+> 
+> > **Respuesta (Response)**: Es la respuesta que el servidor envía al cliente tras procesar la solicitud. Puede incluir los datos solicitados o una confirmación de que la acción se ha realizado.
 >
 > <img src="../resources/images/21-network/client-server.svg" width="750" height="300">
