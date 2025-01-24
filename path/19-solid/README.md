@@ -19,6 +19,11 @@ Sin embargo, los principios de diseño de software pueden aplicarse a cualquier 
 > - ✅ <u>Alta cohesión</u>: Cada componente hace solo una cosa y la hace bien. Es más fácil de leer y mantener.
 > - ⚠️  ️<u>Baja cohesión</u>: Un componente hace demasiadas cosas. Es más confuso y difícil de modificar.
 
+<img src="../resources/images/19-solid/coupling-and-cohesion.png" width="500" height="240">
+<br>
+<img src="../resources/images/19-solid/coupling-vs-cohesion.png" width="500" height="200">
+
+
 ## 2. SOLID
 > Son principios de diseño orientado a objetos que sirven como guía para mejorar la calidad del código, hacerlo más flexible y fácil de mantener.
 
