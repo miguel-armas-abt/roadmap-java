@@ -55,9 +55,8 @@
 > 📂 [**poc-java-crud-generics**](https://github.com/miguel-armas-abt/poc-java-crud-generics)
 
 - [24. Java 8](path/24-java8/README.md)
-
-> 📂 [**poc-java-app-sneakers**](https://github.com/miguel-armas-abt/poc-java-app-sneakers) <br>
-
 - [25. Pruebas unitarias](path/25-unit-tests/README.md)
+
+> 📂 [**poc-java-app-ecommerce**](https://github.com/miguel-armas-abt/poc-java-app-ecommerce) <br>
 
 ---
