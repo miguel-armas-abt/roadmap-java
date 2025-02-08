@@ -57,6 +57,7 @@
 - [24. Java 8](path/24-java8/README.md)
 - [25. Pruebas unitarias](path/25-unit-tests/README.md)
 
+> 📂 [**poc-java-junit**](https://github.com/miguel-armas-abt/poc-java-junit) <br>
 > 📂 [**poc-java-app-ecommerce**](https://github.com/miguel-armas-abt/poc-java-app-ecommerce) <br>
 
 ---
