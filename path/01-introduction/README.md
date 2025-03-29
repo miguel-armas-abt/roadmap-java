@@ -46,8 +46,8 @@
 > > Convierte el código fuente `.java` en bytecode `.class`.
 >
 > > #### Java Runtime Environment (JRE) `java` <br>
-> > Es la implementación de la **Java Virtual Machine (JVM)** para cada sistema operativo.  
-> > La JVM interpreta y ejecuta el bytecode de Java, asegurando que los programas puedan ejecutarse en cualquier máquina que tenga instalado el JRE.
+> > Es la implementación de la **Java Virtual Machine (JVM)** para cada sistema operativo (SO).  
+> > La JVM interpreta el bytecode de Java para el SO subyacente y lo ejecuta.
 >
 > ![Compilación y ejecución](resources/compilation-and-execution.png)
 >

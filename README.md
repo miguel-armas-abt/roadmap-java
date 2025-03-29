@@ -71,8 +71,10 @@
 > 📂 [**poc-spring-boot-customer**](https://github.com/miguel-armas-abt/poc-spring-boot-customer) <br>
 > 📂 [**poc-microservices-monorepo**](https://github.com/miguel-armas-abt/poc-microservices-monorepo) <br>
 
-- [27. Microservicios]
+- [28. Microservicios]
 
 ### III. PROFUNDIZANDO EN JAVA
 
+- [29. JDK](path/29-jdk/README.md)
+- 
 ---
