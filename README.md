@@ -2,6 +2,7 @@
 
 > [README template](path/00-readme-template/README.md)
 
+### I. CONOCIENDO LOS FUNDAMENTOS
 - [01. Introducción](path/01-introduction/README.md)
 - [02. Tipos de datos](path/02-data-types/README.md)
 - [03. Variables](path/03-variables/README.md)
@@ -29,6 +30,8 @@
 
 > 📂 [**poc-java-crud-lists**](https://github.com/miguel-armas-abt/poc-java-crud-lists) <br>
 > 📂 [**poc-java-crud-csv**](https://github.com/miguel-armas-abt/poc-java-crud-csv) <br>
+
+### II. DOMINANDO EL DISEÑO DE SOFTWARE
 
 - [19. Principios SOLID](path/19-solid/README.md)
 
@@ -60,6 +63,13 @@
 > 📂 [**poc-java-junit**](https://github.com/miguel-armas-abt/poc-java-junit) <br>
 > 📂 [**poc-java-app-ecommerce**](https://github.com/miguel-armas-abt/poc-java-app-ecommerce) <br>
 
+### III. CONSTRUYENDO SERVICIOS WEB CON SPRING BOOT
+
 - [26. Spring Boot](path/26-spring-boot/README.md)
+
+> 📂 [**poc-spring-boot-customer**](https://github.com/miguel-armas-abt/poc-spring-boot-customer) <br>
+> 📂 [**poc-microservices-monorepo**](https://github.com/miguel-armas-abt/poc-microservices-monorepo) <br>
+
+
 
 ---
