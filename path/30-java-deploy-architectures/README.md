@@ -1,5 +1,9 @@
 # EVOLUCIÓN DE LAS ARQUITECTURAS DE DESPLIEGUE PARA APLICACIONES JAVA
 
+[← Regresar a notas](../../README.md) <br>
+
+---
+
 ## Servidor de aplicaciones tradicional
 - Una JVM se instala sobre un SO junto con un servidor de aplicaciones (como Tomcat, WebLogic, JBoss, etc) para ejecutar aplicaciones Java.
 - La JVM es crítica pero consume recursos significativos.

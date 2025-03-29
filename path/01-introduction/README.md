@@ -47,7 +47,7 @@
 >
 > > #### Java Runtime Environment (JRE) `java` <br>
 > > Es la implementación de la **Java Virtual Machine (JVM)** para cada sistema operativo (SO).  
-> > La JVM interpreta el bytecode de Java para el SO subyacente y lo ejecuta.
+> > La JVM interpreta el bytecode de Java, generando el código de máquina para el SO subyacente y lo ejecuta.
 >
 > ![Compilación y ejecución](resources/compilation-and-execution.png)
 >

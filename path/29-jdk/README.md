@@ -1,5 +1,9 @@
 # JAVA DEVELOPMENT KIT (JDK)
 
+[← Regresar a notas](../../README.md) <br>
+
+---
+
 La JDK es un conjunto de herramientas que proporciona todo lo necesario para desarrollar y ejecutar aplicaciones Java.
 Incluye:
 
@@ -12,16 +16,17 @@ En tiempo de compilación, el compilador `javac` convierte el código fuente esc
 
 ## JVM
 
-1. `Garbage collection`: Gestión automática de memoria.
-2. `Compilación just-in-time (JIT)`: Técnica de compilación donde el bytecode se compila en código máquina nativo en <u>tiempo de ejecución</u>.
+> #### 🔎 Diccionario
+> 1. `Garbage collection`: Gestión automática de memoria.
+> 2. `Compilación just-in-time (JIT)`: Técnica de compilación donde el bytecode se compila en código máquina nativo en <u>tiempo de ejecución</u>.
 
 La JVM principalmente se encarga del `thread scheduling`, el `garbage collection` y la interpretación del bytecode para el SO subyacente en tiempo de ejecución.
-Durante la ejecución de la JVM interactúan los siguientes componentes.
+Durante la ejecución de la JVM interactúan los siguientes componentes:
 
 > **Class Loader**: Carga el bytecode en la memoria para ser utilizado durante la ejecución del programa.
 
 > **Interpreter**: El interpreter puede trabajar de dos maneras:
->   - Traduce cada instrucción de bytecode a código de máquina una a una y las ejecuta. Este proceso es lento, pero permite dar inicio a la ejecución del programa sin necesidad de pasar previamente por el `JIT`² compiler.
+>   - Traduce cada instrucción de bytecode a código de máquina una a una y las ejecuta. Este proceso es lento, pero permite dar inicio a la ejecución del programa sin necesidad de pasar previamente por el `JIT` compiler.
 >   - Una vez que el código nativo es almacenado en caché, el interpreter puede ejecutarlo en lugar de interpretar el bytecode nuevamente.
 
 > **Profiler**: Identifica las partes del código que se ejecutan frecuentemente (hotspots).
