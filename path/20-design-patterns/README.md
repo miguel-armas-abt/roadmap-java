@@ -10,10 +10,10 @@ Además, sirven como guía para reducir el acoplamiento e incrementar la cohesi�
 ---
 
 ### DTO (Data Transfer Object)
-> Propone transferir datos entre capas mediante objetos que encapsulen únicamente los datos, sin incluir lógica de negocio.
+> Propone crear objetos que encapsulen únicamente datos, sin incluir lógica de negocio. Esto facilita el intercambio de datos entre diferentes capas del sistema.
 >
 > > #### Convención de nombres
-> >- `_DTO`: Encapsula datos para la lógica de negocio o transporte entre capas.
+> >- `_Dto`: Encapsula datos para la lógica de negocio o transporte entre capas.
 > >- `_Entity`: Encapsula datos provenientes de una base de datos SQL.
 > >- `_Document`: Encapsula datos provenientes de una base de datos NoSQL.
 > >- `_RequestWrapper`: Encapsula datos de una solicitud hacia un servicio externo.

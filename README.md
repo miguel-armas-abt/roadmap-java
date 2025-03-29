@@ -2,6 +2,7 @@
 
 > [README template](path/00-readme-template/README.md)
 
+### I. CONOCIENDO LOS FUNDAMENTOS
 - [01. Introducción](path/01-introduction/README.md)
 - [02. Tipos de datos](path/02-data-types/README.md)
 - [03. Variables](path/03-variables/README.md)
@@ -24,6 +25,8 @@
 - [14. Palabra reservada `static`](path/14-static/README.md)
 - [15. Object](path/15-object/README.md)
 - [16. Maven](path/16-maven/README.md)
+
+### II. DOMINANDO EL DISEÑO DE SOFTWARE
 
 - [17. Arquitectura de paquetes](path/17-package-architecture/README.md)
 
@@ -60,6 +63,16 @@
 > 📂 [**poc-java-junit**](https://github.com/miguel-armas-abt/poc-java-junit) <br>
 > 📂 [**poc-java-app-ecommerce**](https://github.com/miguel-armas-abt/poc-java-app-ecommerce) <br>
 
-- [26. Spring Boot](path/26-spring-boot/README.md)
+### III. CONSTRUYENDO APIS RESTUFUL CON SPRINGBOOT
+
+- [26. REST]
+- [27. Spring Boot](path/27-spring-boot/README.md)
+
+> 📂 [**poc-spring-boot-customer**](https://github.com/miguel-armas-abt/poc-spring-boot-customer) <br>
+> 📂 [**poc-microservices-monorepo**](https://github.com/miguel-armas-abt/poc-microservices-monorepo) <br>
+
+- [27. Microservicios]
+
+### III. PROFUNDIZANDO EN JAVA
 
 ---
