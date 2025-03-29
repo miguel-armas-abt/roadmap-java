@@ -44,7 +44,7 @@ Además, sirven como guía para reducir el acoplamiento e incrementar la cohesi�
 ### Dependency Injection (DI)
 > Propone delegar la inyección de las dependencias (objetos que un objeto necesita para funcionar) a otra parte del programa.
 >
-> ![DI](./../resources/images/20-design-patterns/dependency-injection.png)
+> ![DI](resources/dependency-injection.png)
 > 
 > > 💡 Oculta el detalle de implementación de las dependencias. `new Object() ❌`  <br>
 > > 💡 Facilita el intercambio de implementaciones.

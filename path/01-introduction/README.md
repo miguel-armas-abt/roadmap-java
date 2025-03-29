@@ -49,7 +49,7 @@
 > > Es la implementación de la **Java Virtual Machine (JVM)** para cada sistema operativo.  
 > > La JVM interpreta y ejecuta el bytecode de Java, asegurando que los programas puedan ejecutarse en cualquier máquina que tenga instalado el JRE.
 >
-> ![Compilación y ejecución](../resources/images/01-introduction/compilation-and-execution.png)
+> ![Compilación y ejecución](resources/compilation-and-execution.png)
 >
 > - [Manual instalar JDK](https://github.com/miguel-armas-abt/technical-resources/blob/main/02_backend/java/jdk/install/README.md)
 

@@ -8,7 +8,7 @@
 > - Una <u>subred</u> es una división lógica dentro de una red, diseñada para optimizar el tráfico de datos.
 > - <u>Internet</u> es la red global que <u>conecta</u> millones de <u>redes</u> en todo el mundo.
 >
-> <img src="../resources/images/21-network/network.png" width="550" height="230">
+> <img src="resources/network.png" width="550" height="230">
 
 
 > #### Protocolos de red
@@ -34,12 +34,12 @@
 > - **Privadas**: Se utilizan dentro de redes locales y no son accesibles desde internet.
 > - **Públicas**: Son únicas a nivel global y permiten que los dispositivos sean accesibles desde internet.
 > 
-> <img src="../resources/images/21-network/ip.png" width="700" height="300">
+> <img src="resources/ip.png" width="700" height="300">
 
 > #### Puerto
 > Un puerto es un punto de acceso dentro de una computadora que permite redirigir los datos que llegan a través de una conexión de red hacia las aplicaciones o procesos que correspondan.
 >
-> <img src="../resources/images/21-network/port.svg" width="350" height="220">
+> <img src="resources/port.svg" width="350" height="220">
 
 > #### Socket
 > Un socket es un punto de conexión único hacia un proceso o aplicación en toda la red, ya que especifica la dirección IP y el puerto. Por ejemplo, `192.168.0.1:8080`.
@@ -58,4 +58,4 @@
 > 
 > > **Respuesta (Response)**: Es la respuesta que el servidor envía al cliente tras procesar la solicitud. Puede incluir los datos solicitados o una confirmación de que la acción se ha realizado.
 >
-> <img src="../resources/images/21-network/client-server.svg" width="750" height="300">
+> <img src="resources/client-server.svg" width="750" height="300">

@@ -62,7 +62,7 @@
 ---
 
 ## INSERTAR IMAGEN
-![Texto por defecto](../resources/images/00-readme-template/presentation-mode.png)
+![Texto por defecto](resources/presentation-mode.png)
 
 ## REFERENCIAR LINK
 [Google](https://www.google.com.pe)

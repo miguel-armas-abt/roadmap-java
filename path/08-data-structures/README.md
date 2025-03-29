@@ -41,7 +41,7 @@
 > - Proporciona métodos útiles como `add(), remove(), get(), size()`, etc.
 > - Los tipos de colecciones más populares son las <u>listas</u> y los <u>sets</u>.
 > 
-> ![Collections](../resources/images/08-data-sctructures/arrays.jpg)
+> ![Collections](resources/arrays.jpg)
 
 ### 2.1. Listas
 > - Se implementan a partir de la interface `java.util.List`.
@@ -109,7 +109,7 @@
 > - Se implementan a partir de la interface `java.util.Map`.
 > - Las implementaciones más comunes son `HashMap`, `HashTable`, `TreeMap` y `LinkedHashMap`.
 >
-> ![Maps](../resources/images/08-data-sctructures/maps.png)
+> ![Maps](resources/maps.png)
 >
 > > #### HashMap
 > > - Almacena los elementos en <u>desorden</u>.

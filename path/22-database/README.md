@@ -35,7 +35,7 @@
 > #### Llave foránea (FK)
 > Es un atributo (o conjunto de atributos) que crea una relación entre dos tablas. Este atributo debe coincidir con la llave primaria en la tabla relacionada.
 >
-> <img src="../resources/images/22-database/foreign-key.svg" width="500" height="348">
+> <img src="resources/foreign-key.svg" width="500" height="348">
 
 > #### Integridad referencial
 > Se refiere a la característica de las bases de datos de garantizar que los valores de las llaves foráneas correspondan a una llave primaria existente.
@@ -60,7 +60,7 @@ El diseño de bases de datos sigue un conjunto de etapas para garantizar que el 
 - Se utiliza un "Diagrama Entidad-Relación (ER)" que incluye cardinalidades para representar las relaciones.
 
 > 
-> <img src="../resources/images/22-database/ER.svg" width="600" height="260">
+> <img src="resources/ER.svg" width="600" height="260">
 >
 > - `Un usuario puede solicitar 0 o muchos préstamos` y `un préstamo puede ser solicitado por un solo usuario`.
 > - `Un préstamo contiene un solo libro` y `un libro puede estar contenido en 0 o muchos préstamos`.
