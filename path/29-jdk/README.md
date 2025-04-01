@@ -36,7 +36,7 @@ Durante la ejecución de la JVM interactúan los siguientes componentes:
 > **Code cache**: Almacena el código nativo generado por el JIT compiler, permitiendo que las subsecuentes ejecuciones de 
 > esas instrucciones de código sean mucho más rápidas.
 
-![JDK](./resources/jdk.png)
+![JDK](./resources/jdk.svg)
 
 ### JVM como plataforma políglota
 La JVM permite la ejecución de múltiples lenguajes de programación, siempre y cuando estos lenguajes puedan compilarse a bytecode de Java (`.class`).
