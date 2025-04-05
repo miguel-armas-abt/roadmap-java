@@ -61,12 +61,15 @@ El ciclo de vida principal de Maven consta de varias etapas. Las más importante
 
 > `deploy`: Publica el artefacto en un repositorio remoto para compartirlo con otros desarrolladores o sistemas.
 
-> <img src="resources/maven-lifecycle.png" width="700" height="125">
+<img src="resources/maven-lifecycle.png" width="700" height="125">
 
-
-## Comando básico
+### ▶️ Comandos básicos
 ```sh
+  mvn clean package
   mvn clean install
+  mvn test
+  mvn verify
+  mvnw spring-boot:run # Maven Wrapper
 ```
 
 - `clean`: Limpia el directorio `target` antes de realizar cualquier acción.

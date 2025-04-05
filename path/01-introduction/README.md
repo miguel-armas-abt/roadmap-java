@@ -50,8 +50,6 @@
 > > La JVM interpreta el bytecode de Java, generando el código de máquina para el SO subyacente y lo ejecuta.
 >
 > ![Compilación y ejecución](resources/compilation-and-execution.png)
->
-> - [Manual instalar JDK](https://github.com/miguel-armas-abt/technical-resources/blob/main/02_backend/java/jdk/install/README.md)
 
 > #### Garbage Collector
 > Es una funcionalidad de la **JVM** que se encarga de **gestionar la memoria automáticamente**, eliminando objetos que ya no se utilizan,
