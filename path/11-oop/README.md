@@ -134,7 +134,7 @@
 > - Consiste en que una clase puede heredar de más de una clase, ello implica que puede adquirir las propiedades y el comportamiento de todas sus superclases. 
 > - Java no admite la herencia múltiple.
 >
-> <img src="../resources/images/11-oop/multiple_inheritance.png" width="425" height="250">
+> <img src="resources/multiple_inheritance.png" width="425" height="250">
 
 > #### Interface
 > Este concepto nace ante la necesidad de simular la herencia múltiple en Java. 

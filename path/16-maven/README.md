@@ -12,12 +12,12 @@
 > Es el repositorio público donde se almacenan bibliotecas y dependencias utilizadas en proyectos Maven.
 > 
 >
-> <img src="../resources/images/16-maven/central-mvn-repository.png" width="300" height="200">
+> <img src="resources/central-mvn-repository.png" width="300" height="200">
 
 > #### Archivo `pom.xml`
 > Es el archivo de configuración principal de Maven para cualquier proyecto.
 >
-> <img src="../resources/images/16-maven/pom.png" width="420" height="300">
+> <img src="resources/pom.png" width="420" height="300">
 >
 > > `<groupId>`: Grupo al que pertenece el artefacto.
 > 
@@ -32,14 +32,14 @@
 >   - **Carpeta `📁repository`**: Repositorio local que almacena las dependencias descargadas y puedan ser <u>reutilizadas</u>.
 >   - **Archivo `📄settings.xml`**: Archivo de configuración global de Maven (credenciales, repositorios remotos personalizados, etc).
 >
-> <img src="../resources/images/16-maven/.m2.png" width="350" height="120">
+> <img src="resources/.m2.png" width="350" height="120">
 
 
 > #### Directorio target
 > - Es el directorio de salida donde Maven coloca los archivos generados durante el proceso de construcción del proyecto.
 > - Contiene artefactos como el bytecode `.class` y el archivo empaquetado final `.jar` o `.war`.
 >
-> <img src="../resources/images/16-maven/.jar.png" width="350" height="300">
+> <img src="resources/.jar.png" width="350" height="300">
 
 
 
@@ -61,12 +61,15 @@ El ciclo de vida principal de Maven consta de varias etapas. Las más importante
 
 > `deploy`: Publica el artefacto en un repositorio remoto para compartirlo con otros desarrolladores o sistemas.
 
-> <img src="../resources/images/16-maven/maven-lifecycle.png" width="700" height="125">
+<img src="resources/maven-lifecycle.png" width="700" height="125">
 
-
-## Comando básico
+### ▶️ Comandos básicos
 ```sh
+  mvn clean package
   mvn clean install
+  mvn test
+  mvn verify
+  mvnw spring-boot:run # Maven Wrapper
 ```
 
 - `clean`: Limpia el directorio `target` antes de realizar cualquier acción.

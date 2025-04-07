@@ -40,10 +40,10 @@
 >     .collect(Collectors.toList());
 > ```
 > **filter(`user -> !ROBOT.equals(user.getType())`)** <br>
-> <img src="../resources/images/23-java8/filter.gif" width="250" height="180">
+> <img src="./resources/filter.gif" width="250" height="180">
 >
 > **map(`pancake -> mapper.convert(pancake)`)** <br>
-> <img src="../resources/images/23-java8/map.gif" width="250" height="180">
+> <img src="./resources/map.gif" width="250" height="180">
 
 ## 3. Optional
 > - Herramienta para procesar un valor que podría estar presente o no, evitando `NullPointerException`.
