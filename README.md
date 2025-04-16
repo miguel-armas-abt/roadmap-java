@@ -42,15 +42,15 @@
 
 - [20. Patrones de diseño](path/20-design-patterns/README.md)
 
-> 📂 [**poc-java-strategy**](https://github.com/miguel-armas-abt/poc-java-strategy) <br>
+> 📂 [**poc-java-strategy-pattern**](https://github.com/miguel-armas-abt/poc-java-strategy-pattern) <br>
 
 - [21. Cliente - Servidor](path/21-network/README.md)
 
-> 📂 [**poc-java-client-server**](https://github.com/miguel-armas-abt/poc-java-client-server)
+> 📂 [**poc-java-tcp-ubigeo**](https://github.com/miguel-armas-abt/poc-java-tcp-ubigeo)
 
 - [22. Bases de datos relacionales](path/22-database/README.md)
 
-> 📂 [**poc-java-jdbc**](https://github.com/miguel-armas-abt/poc-java-jdbc) <br>
+> 📂 [**poc-java-jdbc-employees**](https://github.com/miguel-armas-abt/poc-java-jdbc-employees) <br>
 
 - [23. Genéricos](path/23-generics/README.md)
 
@@ -61,15 +61,17 @@
 - [25. Pruebas unitarias](path/25-unit-tests/README.md)
 
 > 📂 [**poc-java-junit**](https://github.com/miguel-armas-abt/poc-java-junit) <br>
-> 📂 [**poc-java-app-ecommerce**](https://github.com/miguel-armas-abt/poc-java-app-ecommerce) <br>
+> 📂 [**poc-java-tcp-jdbc-shopping-cart**](https://github.com/miguel-armas-abt/poc-java-tcp-jdbc-shopping-cart) <br>
 
 ### III. CONSTRUYENDO SERVICIOS WEB CON SPRINGBOOT
 
 - [26. REST]
 - [27. Spring Boot](path/27-spring-boot/README.md)
 
-> 📂 [**poc-spring-boot-customer**](https://github.com/miguel-armas-abt/poc-spring-boot-customer) <br>
-
+> 📂 [**poc-spring-boot-cryptography**](https://github.com/miguel-armas-abt/poc-spring-boot-cryptography) <br>
+> 📂 [**poc-spring-boot-redis-token-management**](https://github.com/miguel-armas-abt/poc-spring-boot-redis-token-management) <br>
+> 📂 [**poc-spring-webflux-redis-ubigeo**](https://github.com/miguel-armas-abt/poc-spring-webflux-redis-ubigeo) <br>
+> 
 - [28. Microservicios]
 
 > 📂 [**poc-microservices-monorepo**](https://github.com/miguel-armas-abt/poc-microservices-monorepo) <br>
