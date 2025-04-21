@@ -1,8 +1,7 @@
 # ROADMAP JAVA
 
-> [README template](path/00-readme-template/README.md)
-
-### I. CONOCIENDO LOS FUNDAMENTOS
+### I. FUNDAMENTOS
+- [00. Instalación](path/00-setup/README.md)
 - [01. Introducción](path/01-introduction/README.md)
 - [02. Tipos de datos](path/02-data-types/README.md)
 - [03. Variables](path/03-variables/README.md)
@@ -26,7 +25,7 @@
 - [15. Object](path/15-object/README.md)
 - [16. Maven](path/16-maven/README.md)
 
-### II. DOMINANDO EL DISEÑO DE SOFTWARE
+### II. DISEÑO DE SOFTWARE
 
 - [17. Arquitectura de paquetes](path/17-package-architecture/README.md)
 
@@ -63,20 +62,22 @@
 > 📂 [**poc-java-junit**](https://github.com/miguel-armas-abt/poc-java-junit) <br>
 > 📂 [**poc-java-tcp-jdbc-shopping-cart**](https://github.com/miguel-armas-abt/poc-java-tcp-jdbc-shopping-cart) <br>
 
-### III. CONSTRUYENDO SERVICIOS WEB CON SPRINGBOOT
+### III. SERVICIOS WEB CON SPRINGBOOT
 
 - [26. REST]
 - [27. Spring Boot](path/27-spring-boot/README.md)
 
 > 📂 [**poc-spring-boot-cryptography**](https://github.com/miguel-armas-abt/poc-spring-boot-cryptography) <br>
 > 📂 [**poc-spring-boot-redis-token-management**](https://github.com/miguel-armas-abt/poc-spring-boot-redis-token-management) <br>
+> 📂 [**poc-spring-webflux-openai**](https://github.com/miguel-armas-abt/poc-spring-webflux-openai) <br>
 > 📂 [**poc-spring-webflux-redis-ubigeo**](https://github.com/miguel-armas-abt/poc-spring-webflux-redis-ubigeo) <br>
-> 
+> 📂 [**poc-spring-boot-rxjava-drools**](https://github.com/miguel-armas-abt/poc-spring-boot-rxjava-drools) <br>
+
 - [28. Microservicios]
 
 > 📂 [**poc-microservices-monorepo**](https://github.com/miguel-armas-abt/poc-microservices-monorepo) <br>
 
-### IV. PROFUNDIZANDO EN EL ECOSISTEMA DE JAVA
+### IV. ECOSISTEMA JAVA
 
 - [29. Java Development Kit (JDK)](path/29-jdk/README.md)
 - [30. Evolución de las arquitecturas de despliegue para aplicaciones Java](path/30-java-deploy-architectures/README.md)
@@ -84,8 +85,10 @@
 - [32. Java Community Process (JCP)](path/32-jcp/README.md)
 - [33. Context Dependency Injection (CDI) - JakartaEE](path/33-jakartaee-cdi/README.md)
 
-### V. CONSTRUYENDO SERVICIOS WEB CON QUARKUS
+### V. SERVICIOS WEB CON QUARKUS
 
 - [34. Quarkus](path/34-quarkus/README.md)
 
 ---
+
+> [README template](path/00-readme-template/README.md)

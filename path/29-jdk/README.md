@@ -64,17 +64,3 @@ public class Main {
 En este ejemplo, el código Java en `Main.java` llama a una clase escrita en Kotlin, `KotlinGreeter.kt`. Ambos se compilan a bytecode y se ejecutan en la misma JVM.
 
 ---
-
-## INSTALACIÓN
-
-> - [Descargar](https://jdk.java.net/archive/) `zip` y reservar los binarios.
-> - Agregar la variable de entorno `JAVA_HOME` = `C:\dev-environment\java\jdk-17`
-> - Referenciar el binario en el `Path`: `%JAVA_HOME%\bin`
-
----
-
-## EJECUCIÓN DEL JAR
-
-```shell
-java -jar target/service-name-0.1.0.jar
-```
