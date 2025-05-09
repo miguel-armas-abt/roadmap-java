@@ -81,7 +81,7 @@
 
 - [29. Java Development Kit (JDK)](path/29-jdk/README.md)
 - [30. Evolución de las arquitecturas de despliegue para aplicaciones Java](path/30-java-deploy-architectures/README.md)
-- [31. GraalVM](path/31-graalvm/README.md)
+- [31. GraalVM](https://github.com/miguel-armas-abt/roadmap-graalvm)
 - [32. Java Community Process (JCP)](path/32-jcp/README.md)
 - [33. Context Dependency Injection (CDI) - JakartaEE](path/33-jakartaee-cdi/README.md)
 
