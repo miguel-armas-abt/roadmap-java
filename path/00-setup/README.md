@@ -9,9 +9,3 @@
 > - Referenciar el binario en el `Path`: `%JAVA_HOME%\bin`
 
 ---
-
-## EJECUCIÓN DEL JAR
-
-```shell
-java -jar target/service-name-0.1.0.jar
-```
