@@ -20,7 +20,7 @@ El bucles `foreach` se utiliza para recorrer los elementos de una colección o a
 > Recorrer un arreglo
 >```java
 > int[] numberArray = {1, 2, 3, 4, 5};
-> for (String number : numberArray) {
+> for (int number : numberArray) {
 >   System.out.println(number);
 > }
 
