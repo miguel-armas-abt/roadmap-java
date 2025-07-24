@@ -42,7 +42,7 @@ El bucle `while` se ejecuta mientras una condición sea verdadera.
 
 >```java
 > Scanner = new Scanner(System.in);
-> boolen isValid = true;
+> boolean isValid = true;
 >
 > while (isValid) {
 >   System.out.print("¿Desea continuar en el bucle?: (true/false)");
