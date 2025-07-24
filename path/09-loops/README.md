@@ -41,7 +41,7 @@ El bucle `for` es útil cuando se necesita controlar el número de iteraciones.
 El bucle `while` se ejecuta mientras una condición sea verdadera.
 
 >```java
-> Scanner = new Scanner(System.in);
+> Scanner scanner = new Scanner(System.in);
 > boolean isValid = true;
 >
 > while (isValid) {
